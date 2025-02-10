@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action = "https://api.gateway.com" method="POST">
+        <label for="name">Họ và tên:</label>
+        <input type="text" id="name" name="name" required>
+        <br/>
+        <lable for="date">Chọn ngày giờ: </lable>
+        <input type="datetime-local" id="date" name=""date>
+        <br>
+        <label for="service">Loại dịch vụ:</label>
+        <select id="service" name="service">
+            <option value="advice">Tư vấn</option>
+            <option value="follow">Theo dõi</option>
+        </select>
+        <br>
+        <label>Ghi chú:</label>
+        <textarea id="empty" name="empty" rows="5" cols="20" required></textarea>
+        <br>
+        <button>Đặt lịch</button>
+    </form>
+</body>
+</html>
