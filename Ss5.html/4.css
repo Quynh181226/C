@@ -1,0 +1,12 @@
+div{
+    font-family: 'Arial', sans-serif;
+}
+.product {
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+}
+.product div {
+    flex: 1;
+    margin-left: 15px;
+}

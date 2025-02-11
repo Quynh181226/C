@@ -1,0 +1,18 @@
+
+.underline{
+    text-decoration:underline dotted rgb(66, 189, 206);
+    font-size: larger;
+}
+div{
+    background-color: rgb(42, 40, 40);
+}
+h2{
+   color: white;
+   font-family: 'Arial', sans-serif;
+}
+p{
+    color: green;
+    font-weight: 700;
+    font-style: italic;
+    font-family: 'Arial', sans-serif;
+}
