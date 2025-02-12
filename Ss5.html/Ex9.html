@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 350px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .row div {
+            flex: 1;
+        }
+
+        .checkbox-group {
+            margin-bottom: 15px;
+        }
+
+        .payment-options {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Billing Address</h2>
+
+        <div class="row">
+            <div>
+                <label>First Name</label>
+                <input type="text">
+            </div>
+            <div>
+                <label>Last Name</label>
+                <input type="text">
+            </div>
+        </div>
+
+        <label>Username</label>
+        <input type="text" placeholder="@Username">
+
+        <label>Email (Optional)</label>
+        <input type="email" placeholder="you@example.com">
+
+        <label>Address</label>
+        <input type="text" placeholder="1234 Main St">
+
+        <label>Address 2 (Optional)</label>
+        <input type="text" placeholder="Apartment or suite">
+
+        <div class="row">
+            <div>
+                <label>Country</label>
+                <select>
+                    <option>Choose...</option>
+                    <option>Vietnam</option>
+                    <option>USA</option>
+                </select>
+            </div>
+            <div>
+                <label>State</label>
+                <select>
+                    <option>Choose...</option>
+                </select>
+            </div>
+            <div>
+                <label>Zip</label>
+                <input type="text">
+            </div>
+        </div>
+
+        <div class="checkbox-group">
+            <input type="checkbox"> Shipping address is the same as my billing address <br>
+            <input type="checkbox"> Save this information for next time
+        </div>
+
+        <h2>Payment</h2>
+        <div class="payment-options">
+            <label><input type="radio" name="payment" checked> Credit card</label>
+            <label><input type="radio" name="payment"> Debit card</label>
+            <label><input type="radio" name="payment"> PayPal</label>
+        </div>
+
+        <label>Name on card</label>
+        <input type="text">
+
+        <label>Credit card number</label>
+        <input type="text">
+
+        <div class="row">
+            <div>
+                <label>Expiration</label>
+                <input type="text">
+            </div>
+            <div>
+                <label>CVV</label>
+                <input type="text">
+            </div>
+        </div>
+
+        <button>Continue to checkout</button>
+    </div>
+
+</body>
+
+</html>
