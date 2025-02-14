@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box-model {
+            width: 150px;
+            height: 150px;
+            padding: 20px;
+            padding: top 40px;
+            border: 5px solid green;
+            margin: 40px;
+            margin-right: 80px;
+            background-color: white;
+            box-sizing: content-box;
+            border-radius: 40px;
+        }
+
+        .absolute {
+            margin-top: 150px;
+        }
+
+        h3 {
+            margin-bottom: 70px;
+        }
+
+        .relative span {
+            padding: 50px;
+            border: 10px solid black;
+            margin-right: 10px;
+            background-color: pink;
+        }
+
+        .absolute span {
+            padding: 50px;
+            border: 10px solid black;
+            margin-right: 10px;
+            background-color: pink;
+        }
+
+
+        .position-relative {
+            position: relative;
+            top: 170px;
+            left: 140px;
+        }
+
+        .position-absolute {
+            position: relative;
+            top: 170px;
+            left: 140px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 class="box-model">Box model</h1>
+    <span class="box-model">Box - model</span>
+    <section class="relative">
+        <h3>Posion Relative</h3>
+        <span></span>
+        <span></span>
+        <span></span>
+    </section>
+    <section class="absolute">
+        <h3>Posion Absolute</h3>
+        <span></span>
+        <span></span>
+        <span class="position-absolute"></span>
+    </section>
+</body>
+
+</html>
