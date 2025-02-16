@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Cards</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFFFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            border-right: 1px solid lightgray;
+            border-top: 1px solid lightgray;
+        }
+
+        .card[title$="card 2"] {
+            border-right: 2px solid #555556;
+        }
+
+        p{
+            font-family: "Times New Roman", serif;
+        }
+        h2 {
+            font-size: 18px;
+            font-weight: 800;
+        }
+
+        .date {
+            font-size: 12px;
+            color: #666666;
+        }
+
+        .card img {
+            width: 300px;
+            height: 200px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .content {
+            font-size: 14px;
+            color: #666666;
+        }
+        .card button {
+            padding: 10px 20px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <p class="date">April 24, 2017</p>
+            <h2>SED MAGNA</h2>
+            <h2>IPSUM FAUCIBUS</h2>
+            <img src="https://c.wallhere.com/photos/cf/78/2560x1600_px_car_Orange_Cars-747726.jpg!d">
+            <p class="content">
+                Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
+                venenatis dolor imperdiet dolor mattis sagittis magna etiam.
+            </p>
+            <button>FULL STORY</button>
+        </div>
+        <div class="card" title="card 2">
+            <p class="date">April 22,2017</p>
+            <h2>PRIMIS EGET</h2>
+            <h2>IMPERDIET LOREM</h2>
+            <img src="https://phunugioi.com/wp-content/uploads/2020/10/hinh-anh-quay-lung.jpg">
+            <p class="content">
+                Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
+                venenatis dolor imperdiet dolor mattis sagittis magna etiam.
+            </p>
+            <button>FULL STORY</button>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        b{
+            color: white;
+            font-size: 12px;
+        }
+        .message{
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .input{
+            display: flex;
+            align-items: center;
+
+        }
+        .name{
+            border-radius: 5px;
+        }
+        .email{
+            padding-left: 15px;
+        }
+        input, textarea{
+            background-color: #4B3E5D;
+            border-radius: 3px;
+            border: 1px solid white;
+        }
+        button{
+            background-color: white;
+            border-radius: 5px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            border: none;
+            padding: 5px 10px;
+            color: black;
+        }
+        .container {
+            max-width: 400px;
+            background: #4B3E5D;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <form>
+        <div class="input">
+            <div class="name">
+                <label for="name"><b>Name</b></label>
+                <br>
+                <input type="text" id="name">
+            </div>
+            <div class="email">
+                <label for="email"><b>Email</b></label>
+                <br>
+                <input type="email" id="email"">
+            </div>
+        </div>
+        <div class="message">
+            <label for="message"><b>Message</b></label>
+            <br>
+            <textarea id="message" rows="5" cols="45"></textarea>
+        </div>
+        <button type="submit">SEND MESSAGE</button>
+    </form>
+</div>
+</body>
+</html>
