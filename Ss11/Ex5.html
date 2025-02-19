@@ -1,10 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ss11 k5</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px 200px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            color: white;
+        }
+
+        .header{
+            width: 100%;
+            height: 56px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .header .logo p{
+            color: rgb(123, 0, 0);
+            font-size: 35px;
+            font-weight: 700;
+        }
+
+        .nav {
+            flex: 1;
+            background-color: rgb(123, 0, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content {
+            display: flex;
+            gap: 10px;
+            height: 500px;
+        }
+
+        main{
+            flex: 3;
+            padding: auto;
+            background-color: rgb(123, 0, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        aside{
+            flex: 1;
+            padding: auto;
+            background-color: rgb(123, 0, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .column {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .item {
+            width: calc(100% / 3 - 7px);
+            height: 60px;
+            background-color: rgb(123, 0, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .menu-bar{
+            display: none;
+            height: 30px;
+            width: 30px;
+        }
+
+        @media screen and (max-width: 767px) {
+            body {
+                padding: 0;
+                gap: 6px;
+            }
+            .nav{
+                height: 200px;
+            }
+            .menu-bar {
+                display: block;
+                background-color: red;
+            }
+            .header{
+                flex-direction: column;
+                height: 300px;
+            }
+            .main {
+                height: 400px;
+            }
+            .content {
+                flex-direction: column;
+                gap: 6px;
+                margin: 0 10px;
+            }
+
+            .aside {
+                height: 200px;
+            }
+            .logo{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 10px;
+            }
+            .column{
+                flex-direction: column;
+                gap: 4px;
+            }
+            .item{
+                width: 100%;
+                height: 30px;
+            }
+        }
+
+        @media screen and (min-width: 767px) and (max-width: 1023px) {
+            body{
+                padding: 10px;
+            }
+            .content{
+                flex-direction: column;
+            }
+            .main{
+                height: 400px;
+            }
+            .aside{
+                height: 200px;
+            }
+            .item {
+                width: calc(50% - 7px);
+                height: 40px;
+            }
+        }
+    </style>
 </head>
 <body>
+<div class="header">
+    <div class="logo">
+        <p>LOGO</p>
+        <img
+                class="menu-bar"
+                src="https://cdn-icons-png.flaticon.com/128/10308/10308969.png"
+                alt="png"/>
+    </div>
+    <div class="nav">#nav</div>
+</div>
 
+<div class="content">
+    <main>#main</main>
+    <aside>#aside</aside>
+</div>
+
+<div class="column">
+    <div class="item">.column1</div>
+    <div class="item">.column2</div>
+    <div class="item">.column3</div>
+    <div class="item">.column4</div>
+    <div class="item">.column5</div>
+    <div class="item">.column6</div>
+</div>
 </body>
 </html>

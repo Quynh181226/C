@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            color: white;
+            font-size: 30px;
+        }
+
+        header {
+            background-color: red;
+            font-weight: bold;
+            text-align: center;
+            padding: 30px 0;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        aside:nth-of-type(1) {
+            background-color: green;
+            font-size: 26px;
+            border-radius: 15px;
+            padding: 10px;
+        }
+
+        aside:nth-of-type(2) {
+            background-color: pink;
+            font-size: 26px;
+            border-radius: 15px;
+            padding: 10px;
+        }
+
+        main {
+            background-color: yellow;
+            padding-top: 50px;
+            display: flex;
+            justify-content: center;
+            /*align-items: center;*/
+            text-align: center;
+            font-size: 22px;
+            color: black;
+            height: 400px;
+            border-radius: 15px;
+            padding: 10px;
+        }
+
+        section {
+            display: flex;
+            gap: 20px;
+        }
+
+        footer {
+            background-color: blue;
+            text-align: center;
+            padding: 30px;
+            margin-top: 20px;
+            border-radius: 15px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            section {
+                flex-direction: column;
+            }
+            aside {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>Header</header>
+<section>
+    <aside>Sidebar 1</aside>
+    <main>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis,
+        voluptate id error atque voluptates consectetur a veritatis dolor at
+        debitis earum aut eveniet velit ut non sed expedita alias distinctio.
+    </main>
+    <aside>Sidebar 2</aside>
+</section>
+<footer>Footer</footer>
+</body>
+</html>

@@ -1,201 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balloon Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
-        /* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  .container {
-    height: 200px;
-    display: flex;
-    gap: 12px;
-    margin: 50px;
-  }
-
-  .row {
-    flex: 1;
-    display: flex;
-    gap: 12px;
-    flex-direction: column;
-  }
-
-  .row-paragraph {
-    height: 100px;
-    background-color: rgb(206, 201, 201);
-    text-align: center;
-    line-height: 100px;
-  }
-
-  .row-img {
-    flex: 1;
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: cover;
-    flex: 1;
-  } */
-
-        * {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
 
-        .container {
+        .ban {
+            background: url('banner.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .item {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            height: 250px;
+            color: white;
             display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin: 20px;
+            align-items: center;
             justify-content: center;
+            text-align: center;
+            padding: 20px;
         }
 
-        .row {
-            flex: 1;
+        .ovl {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .sub {
+            background: darkred;
+            color: white;
             display: flex;
             flex-direction: column;
-            gap: 12px;
             align-items: center;
-            background-color: #ebedf0;
-            padding: 10px;
-            border-radius: 8px;
-            max-width: 250px;
-        }
-
-        .row.large {
-            max-width: 300px;
-        }
-
-        .title {
-            height: 50px;
-            background-color: transparent;
+            justify-content: center;
             text-align: center;
-            line-height: 50px;
-            font-weight: bold;
-            font-size: 18px;
+            padding: 40px 20px;
         }
 
-        .img-container {
-            width: 100%;
-            height: 150px;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            border-radius: 8px;
+        .sub button {
+            margin-top: 10px;
         }
     </style>
-    <!-- <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      .container {
-        height: 200px;
-        display: flex;
-        gap: 12px;
-        margin: 50px;
-      }
-
-      .roww {
-        border: 1px solid red;
-        flex: 1;
-        display: flex;
-        gap: 12px;
-        flex-direction: column;
-      }
-
-      .title {
-        height: 100px;
-        border: 1px solid blue;
-        background-color: rgb(206, 201, 201);
-        text-align: center;
-        line-height: 100px;
-      }
-
-      .img-container {
-        background-image: url(https://stepback.vn/wp-content/uploads/2024/01/Sb2000-2-min.webp);
-        height: 100px;
-        flex: 1;
-        background-position: right;
-        background-repeat: no-repeat;
-        background-size: cover;
-        flex: 1;
-      }
-    </style> -->
-
-    <!-- Phan body bai chuaa:
-
- <div class="container">
-      <div class="row">
-        <div class="title">foootball</div>
-        <div class="img-container"></div>
-      </div>
-      <div class="roww">
-        <div class="title">foootball</div>
-        <div class="img-container"></div>
-      </div>
-      <div class="roww">
-        <div class="title">foootball</div>
-        <div class="img-container"></div>
-      </div>
-      <div class="roww">
-        <div class="title">foootball</div>
-        <div class="img-container"></div>
-      </div>
-    </div> -->
 </head>
+
 <body>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sport Categories</title>
-    <link rel="stylesheet" href="./ss10_02.css" />
-</head>
-<body>
-<h2 style="margin: 20px">Category</h2>
-<div class="container">
-    <div class="row large">
-        <div class="title">FOOTBALL</div>
-        <div
-                class="img-container"
-                style="
-                background-image: url('https://vietgiao.edu.vn/wp-content/uploads/2019/11/lich-thi-dau-bong-da-hom-nay-ngay12-41523479911-1280x800.jpg');
-              "
-        ></div>
+    <div class="hdr">
+        <img src="https://hpconnect.vn/wp-content/uploads/2020/02/nhung-hinh-anh-thien-nhien-dep-nhat-ban-1.jpeg"
+            width="200" height="200">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.rGEb2VdaubE3wDxzonTHZQHaEo&pid=Api&P=0&h=180" width="200"
+            height="200">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.tcpizMARWL7EerFYSU2WlAHaE8&pid=Api&P=0&h=180" width="200"
+            height="200">
+        <img src="https://file.hstatic.net/1000069970/file/2_c9924d06ec1e44e19f45f4988df3935d.png" width="200"
+            height="200">
+        <img src="https://tse4.mm.bing.net/th?id=OIP.SHQewwrPnSBXb03j4ZN1gQHaEo&pid=Api&P=0&h=180" width="200"
+            height="200">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.LSBjrb9_gpxdimdxCYrmjwHaFo&pid=Api&P=0&h=180">
     </div>
-    <div class="row">
-        <div class="title">BASKETBALL</div>
-        <div
-                class="img-container"
-                style="
-                background-image: url('https://mbmart.com.vn/100/329/420/products/qua-bong-ro-size-7-sports-2.jpg.webp');
-              "
-        ></div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>We like balloons</h1>
+                <p>You can find all kinds of balloon related things here.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" style="background-image: url('image1.jpg');">
+                <div class="ovl">
+                    <h2>Angry people at balloon fiestas</h2>
+                    <p>Hot air balloons. A bit weather sensitive.</p>
+                </div>
+            </div>
+            <div class="col" style="background-image: url('image2.jpg');">
+                <div class="ovl">
+                    <h2>Balloon photos</h2>
+                    <p>I have quite a few.</p>
+                </div>
+            </div>
+            <div class="col" style="background-image: url('image3.jpg');">
+                <div class="ovl">
+                    <h2>Special Shapes</h2>
+                    <p>Why are some of them so scary looking?</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col" style="background-image: url('image4.jpg');">
+                <div class="ovl">
+                    <h2>10 things you discover when taking a balloon ride.</h2>
+                    <p>Number 8 will AMAZE you.</p>
+                </div>
+            </div>
+            <div class="col">
+                <p>Sign up for more information about balloons.</p>
+                <button>Sign me up!</button>
+            </div>
+            <div class="col" style="background-image: url('image5.jpg');">
+                <div class="ovl">
+                    <h2>10 things you discover when taking a balloon ride.</h2>
+                    <p>Number 8 will AMAZE you.</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="row">
-        <div class="title">CAR SPORT</div>
-        <div
-                class="img-container"
-                style="
-                background-image: url('https://myshoes.vn/image/catalog/blog/03.02.2023/Bugatti-Chiron-new-top-speed-record-1-1200x628.jpg');
-              "
-        ></div>
-    </div>
-    <div class="row large">
-        <div class="title">TABLE TENNIS</div>
-        <div
-                class="img-container"
-                style="
-                background-image: url('https://cdn-images.vtv.vn/zoom/640_400/2018/11/25/5af81423deea5image-15431019534061098857382.jpg');
-              "
-        ></div>
-    </div>
-</div>
 </body>
+
 </html>
