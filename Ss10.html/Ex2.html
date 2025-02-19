@@ -22,8 +22,8 @@
         #headers {
             font-weight: bolder;
             font-size: 14px;
-            text-align: right;
-            margin-bottom: 10px;
+            /*text-align: right;*/
+            /*margin-bottom: 10px;*/
             width: 100%;
         }
 
@@ -68,8 +68,12 @@
         .column {
             display: flex;
             flex-direction: column;
+            margin-top: 10px;
             align-items: center;
             gap: 10px;
+        }
+        .column[title$=text-6]{
+            padding-top: 22px;
         }
     </style>
 </head>
@@ -77,9 +81,10 @@
 <body>
 
 <div class="content">
-    <div id="headers">Category</div>
+
     <div class="column">
         <div class="container">
+            <div id="headers">Category</div>
             <div class="text-5">
                 <h3>FOOTBALL</h3>
             </div>
@@ -89,7 +94,7 @@
         </div>
     </div>
 
-    <div class="column">
+    <div class="column" title="text-6">
         <div class="container">
             <div class="text-5">
                 <h3>BASKETBALL</h3>
@@ -100,7 +105,7 @@
         </div>
     </div>
 
-    <div class="column">
+    <div class="column" title="text-6">
         <div class="container">
             <div class="text-5">
                 <h3>CAR SPORT</h3>
@@ -111,7 +116,7 @@
         </div>
     </div>
 
-    <div class="column">
+    <div class="column" title="text-6">
         <div class="container">
             <div class="text-5">
                 <h3>TABLE TENNIS</h3>
