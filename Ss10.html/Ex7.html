@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 2px;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background: white;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav ul {
+            list-style: none;
+            margin-left: 100px;
+            display: flex;
+            gap: 12px;
+        }
+
+        nav ul li {
+            font-weight: bolder;
+            font-size: 14px;
+        }
+
+        .e-paper {
+            color: blue;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 20px;
+            max-width: 1100px;
+            margin: 20px auto;
+        }
+
+        .content-1 {
+            position: relative;
+            /*width: 100%;*/
+        }
+
+        .content-1 img {
+            width: 100%;
+            display: block;
+        }
+
+        .content-1 .caption {
+            margin-left: 8px;
+            font-size: 18px;
+            font-weight: bolder;
+            /*max-width: 80%;*/
+            position: absolute;
+            top: 220px;
+            left: 0;
+            color: #2c2b2c;
+            /*padding-left: 10px;*/
+            /*font-size: 15px;*/
+            background: whitesmoke;
+            padding: 5px;
+            /*font-weight: 300;*/
+        }
+
+        /*.content-2,*/
+        .content-3 {
+            background-color: #F8F8F8;
+            border-radius: 2px;
+            padding-bottom: 5px;
+            /*width: 100px;*/
+            /*height: 2s00px;*/
+        }
+
+        .marks {
+            font-size: 18px;
+            font-weight: 520;
+            /*margin: 0;*/
+            /*margin-bottom: 10px;*/
+            padding-bottom: 10px;
+            /*display: flex;*/
+            /*align-items: flex-start;*/
+        }
+
+        .content-2 ul {
+            list-style: none;
+        }
+
+        .content-2 li {
+            /*margin-bottom: 10px;*/
+            font-size: 17px;
+            font-weight: 520;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #e3e0e0;
+            font-family: "Times New Roman", serif;
+        }
+
+        #line {
+            border-bottom: none;
+        }
+
+        .content-3 h4 {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+.content-3 h4{
+    font-size: 18px;
+    font-weight: bold;
+}
+        #next {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            color: #107AFF;
+            text-decoration: none;
+            margin-right: 10px;
+            margin-top: 5px;
+            /*margin-bottom: 15px;*/
+            font-weight: bold;
+        }
+
+        #text-1 {
+            color: #107AFF;
+            font-weight: bolder;
+        }
+.text-2{
+    margin-top: 20px;
+    font-size: 15px;
+}
+        .sign-up {
+            padding: 10px;
+            /*text-align: center;*/
+        }
+
+        .sign-up input {
+            width: 80%;
+            padding: 5px;
+            margin-top: 5px;
+            border: none;
+        }
+
+        .sign-up button {
+            background: #007bff;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            margin-top: 5px;
+        }
+
+        .emails {
+            display: flex;
+
+            justify-items: center;
+        }
+
+        .emails button {
+            spadding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>World</li>
+            <li>Politics</li>
+            <li>Business</li>
+            <li>Opinion</li>
+            <li>Tech</li>
+            <li>Science</li>
+            <li>Health</li>
+            <li>Sports</li>
+            <li>Entertainment</li>
+            <li>Travel</li>
+            <li>More</li>
+        </ul>
+        <a href="#" class="e-paper"><i class="fa-regular fa-credit-card"></i> E-PAPER</a>
+    </nav>
+
+    <div class="container">
+        <div class="content-1">
+            <img
+                src="https://kenh14cdn.com/thumb_w/660/203336854389633024/2022/12/3/photo-1-16700339933481366573366.jpg">
+            <div class="caption">What One Photo Tells Us About North Korea’s Nuclear Program</div>
+            <div class="text-2"><p>Clues from a propaganda photo reveal details about North Korea's expanding weapons programs and internal politics.
+            </p></div>
+        </div>
+
+        <div class="content-2">
+            <p class="marks"><mark style="#FBFF22">TOP STORIES</mark></p>
+            <ul>
+                <li>PM unveils Shiva statue in Coimbatore on Mahashivratri</li>
+                <li>PM Modi: Kanpur train accident was a conspiracy</li>
+                <li>‘Sena, BJP have no option but to join hands again’</li>
+                <li>Thousands bid adieu to martyred jawan in Kashmir</li>
+                <li>Jayalalithaa’s niece Deepa floats political outfit</li>
+                <li id="line">‘China made mistake of ignoring India’s talent’</li>
+            </ul>
+        </div>
+
+        <div class="content-4">
+            <div class="content-3">
+                <p class="marks"><mark style="#FBFF22">QUICK BITES</mark></p>
+                <h4>Stocks Sell Off, Gold Rises Ahead of Trump Speech: Markets Wrap</h4>
+                <p>Global stocks retreated, erasing gains for the week as a glum set of European corporate earnings
+                    compounded investor nervousness before a major speech from U.S. President Donald Trump. Gold
+                    extended
+                    its rally as the dollar edged lower.</p>
+                <a href="#" id="next">Next ></a>
+            </div>
+            <div class="sign-up">
+                <p id="text-1">Get the Quick Bites delivered to your inbox daily</p>
+                <div class="emails">
+                    <div id="enter"><input type="email" placeholder="Enter your email"></div>
+                    <button>Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

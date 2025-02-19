@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Clubs Ranking</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #F5F7FA;
+            padding: 20px;
+        }
+
+        .stt {
+            text-align: right;
+            padding-right: 15px;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            max-width: 1000px;
+            padding: 20px;
+            background-color: #F9FAFC;
+        }
+
+        .content-1 h2 {
+            margin-bottom: 10px;
+        }
+
+        .new {
+            width: 100%;
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .new img {
+            width: 100%;
+            display: block;
+            border-radius: 8px;
+        }
+
+        span {
+            font-size: 10px;
+            font-weight: 100;
+        }
+
+        #text {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            color: white;
+            font-size: 15px;
+            background: rgba(227, 196, 153, 0.62);
+            padding: 5px;
+            font-weight: 300;
+        }
+
+        .content-2 {
+            margin-top: 36px;
+            background-color: #EBEEF3;
+            padding: 10px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .item img {
+            border-radius: 5px;
+        }
+
+        .news-info {
+            font-size: 14px;
+        }
+
+        button {
+            background-color: #B8C2CE;
+            color: whitesmoke;
+            border: none;
+            /*margin-left: 40px;*/
+            padding: 8px 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .content-3 h2 {
+            margin-bottom: 10px;
+        }
+
+        table {
+            /*width: 100%;*/
+            background: #EBEEF3;
+            border-radius: 5px;
+        }
+
+        table th,
+        table td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        table tr:last-child td,
+        table tr:last-child th {
+            border-bottom: none;
+        }
+
+        .name {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .name img {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="content-1">
+            <h2>Recent News</h2>
+            <div class="new">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.PkwYEF0nLqTJXOMdp1KlNgHaE8&pid=Api&P=0&h=180" width="500"
+                    height="350">
+                <h5 id="text"><span>
+                        <p>Day 5 Highlights</p>
+                    </span>Baku 2023 World Taekwondo Championships</h5>
+            </div>
+        </div>
+        <div class="content-2">
+            <div class="item">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.U4fQ8pCxx2SKW4thdt-I1wHaEy&pid=Api&P=0&h=180" width="53"
+                    height="46">
+                <div class="news-info">
+                    <strong>Baku 2023 Taekwondo Championships</strong><br>
+                    12 July 2023
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://c8.alamy.com/comp/E4YHYP/lee-westwood-british-open-golf-championship-royal-liverpool-golf-club-E4YHYP.jpg"
+                    width="104" height="42">
+                <div class="news-info">
+                    <strong>Open Championship Royal Liverpool Golf</strong><br>
+                    20 July 2023
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://images-cricketcom.imgix.net/news-1685466929668?auto=compress,format&dpr=1&w=976&h400&q=80"
+                    width="55" height="46">
+                <div class="news-info">
+                    <strong>Ireland Tour of England Test 2023</strong><br>
+                    27 July 2023
+                </div>
+            </div>
+            <button>More →</button>
+        </div>
+
+        <div class="content-3">
+            <h2>Clubs Ranking</h2>
+            <table>
+                <tr>
+                    <th>Club</th>
+                    <th></th>
+                    <th>GP</th>
+                    <th>W</th>
+                    <th>D</th>
+                    <th>L</th>
+                    <th>F</th>
+                    <th>A</th>
+                    <th>GD</th>
+                </tr>
+                <tr>
+                    <th class="stt">1</th>
+                    <td class="name"><img
+                            src="https://tse3.mm.bing.net/th?id=OIP.8biS_uVDuPRS1Tppr4XLjwHaHa&pid=Api&P=0&h=180"
+                            width="30" height="30">Manchester
+                        City</td>
+                    <td>38</td>
+                    <td>29</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>99</td>
+                    <td>26</td>
+                    <td>73</td>
+                </tr>
+                <tr>
+                    <th class="stt">2</th>
+                    <td class="name"><img
+                            src="https://tse3.mm.bing.net/th?id=OIP.CsQHPxyRv1TQWCG9jTBu4gHaHa&pid=Api&P=0&h=180"
+                            width="30" height="30">Liverpool
+                    </td>
+                    <td>38</td>
+                    <td>28</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>94</td>
+                    <td>26</td>
+                    <td>68</td>
+                </tr>
+                <tr>
+                    <th class="stt">3</th>
+                    <td class="name"><img
+                            src="https://tse4.mm.bing.net/th?id=OIP.nlzmyqzY9SUfH9YMzt_GPQHaHa&pid=Api&P=0&h=180"
+                            width="25" height="25">Chelsea
+                    </td>
+                    <td>38</td>
+                    <td>21</td>
+                    <td>11</td>
+                    <td>6</td>
+                    <td>76</td>
+                    <td>33</td>
+                    <td>43</td>
+                </tr>
+                <tr>
+                    <th class="stt">4</th>
+                    <td class="name"><img
+                            src="http://logos-download.com/wp-content/uploads/2016/05/Tottenham_Hotspur_logo_crest_logotype.png"
+                            width="25" height="25">Tottenham
+                        Hotspur</td>
+                    <td>38</td>
+                    <td>22</td>
+                    <td>5</td>
+                    <td>11</td>
+                    <td>69</td>
+                    <td>40</td>
+                    <td>29</td>
+                </tr>
+                <tr>
+                    <th class="stt">5</th>
+                    <td class="name"><img
+                            src="http://1.bp.blogspot.com/-FOQg-cbKaIk/Trpuk_XQoxI/AAAAAAAAFnU/pvbTXEKB-ig/s1600/Arsenal+2002-2011.png"
+                            width="20" height="20">Arsenal
+                    </td>
+                    <td>38</td>
+                    <td>22</td>
+                    <td>3</td>
+                    <td>13</td>
+                    <td>61</td>
+                    <td>48</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <th class="stt">6</th>
+                    <td class="name"><img
+                            src="https://logos-world.net/wp-content/uploads/2020/06/Manchester-United-Logo-1998-Present.jpg"
+                            width="30" height="22">Manchester
+                        United</td>
+                    <td>38</td>
+                    <td>16</td>
+                    <td>10</td>
+                    <td>12</td>
+                    <td>57</td>
+                    <td>57</td>
+                    <td>0</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+</html>
