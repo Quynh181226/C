@@ -1,0 +1,82 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+    />
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <style>
+        body{
+            background-color: white;
+        }
+        form {
+            background-color: #F8F9FA;
+        }
+    </style>
+</head>
+<body class="w-60">
+<form class="w-60 mx-5 my-5 p-4 border-0 rounded ">
+    <div class="mb-3 ">
+        <h4 class="m-1">Payment</h4>
+    </div>
+    <div class="mb-3">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">Credit card</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">Debit card</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+            <label class="form-check-label" for="exampleRadios3">Paypal</label>
+        </div>
+    </div>
+
+    <div class="d-flex gap-3">
+        <div class="mb-3 w-50">
+            <label for="exampleInputEmail1" class="form-label">Name on card</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">Full name as displayed on card</div>
+        </div>
+        <div class="mb-3 w-50">
+            <label for="exampleInputPassword1" class="form-label">Credit card number</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+    </div>
+
+    <div class="d-flex gap-3">
+        <div class="mb-3 w-25">
+            <label for="exampleInputPassword3" class="form-label">Expiration</label>
+            <input type="text" class="form-control" id="exampleInputPassword3">
+        </div>
+        <div class="mb-3 w-25">
+            <label for="exampleInputPassword4" class="form-label">CVV</label>
+            <input type="text" class="form-control" id="exampleInputPassword4">
+        </div>
+    </div>
+
+    <div class="border-top border-2 pt-3 d-grid gap-2" style="border-color: #C6C8C9;">
+        <button class="btn btn-primary" type="button">Submit Payment</button>
+    </div>
+</form>
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"
+></script>
+</body>
+</html>
