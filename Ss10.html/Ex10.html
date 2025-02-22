@@ -1,10 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ss10 lt10</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 100%;
+            height: 100vh;
+            margin: 8px;
+            border: 1px solid rgb(226, 226, 226);
+            border-radius: 6px;
+            padding: 15px 30px;
+            display: flex;
+            gap: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container .img{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            gap: 10px;
+        }
+
+        .container .img .detail-img {
+            width: 10%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .container .img .detail-img img{
+            width: 100%;
+            height: fit-content;
+            border-radius: 8px;
+        }
+
+        .container .img img{
+            width: 80%;
+            height: fit-content;
+            border-radius: 8px;
+        }
+
+        .container .info{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .container .info .detail-info{
+            width: 60%;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .info .detail-info h2{
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        .info .detail-info .price{
+            color: rgb(189, 189, 189);
+            font-size: 17px;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+
+        .info .detail-info .star{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .info .detail-info p img{
+            width: 90px;
+            height: 20px;
+        }
+        .info .detail-info p span{
+            color: rgb(189, 189, 189);
+            border-left: 2px solid gray;
+            padding-left: 15px;
+        }
+
+        .info .detail-info .title{
+            color: rgb(181, 181, 181);
+        }
+
+        .detail-info .size .size-item{
+            width: 22px;
+            height: 22px;
+            border: none;
+            border-radius: 5px;
+            background-color: antiquewhite;
+            font-size: 8px;
+            font-weight: 600;
+        }
+        .detail-info .size .size-item:hover{
+            color: white;
+            background-color: rgb(150, 68, 0);
+        }
+
+        .detail-info .size, .color{
+            display: flex;
+            gap: 12px;
+        }
+
+        .detail-info .color .btn-color{
+            width: 22px;
+            height: 22px;
+            border: none;
+            border-radius: 50%;
+        }
+
+        .color .btn-color:first-child{
+            background-color: rgb(95, 0, 183);
+        }
+
+        .color .btn-color:nth-child(2){
+            background-color: black;
+        }
+
+        .color .btn-color:last-child {
+            background-color: rgb(183, 119, 0);
+        }
+
+        .info .qty{
+            display: flex;
+            gap: 10px;
+            border-bottom: 1px solid rgb(199, 199, 199);
+            padding-bottom: 30px;
+        }
+
+        .info .qty .btn-1{
+            border: 1px solid rgb(205, 205, 205);
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            width: 80px;
+            height: 40px;
+            border-radius: 8px;
+            justify-content: space-around;
+            background-color: white;
+        }
+
+        .info .qty .btn-2{
+            border: 1px solid rgb(82, 82, 82);
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            width: 170px;
+            height: 40px;
+            border-radius: 8px;
+            justify-content: space-around;
+            background-color: white;
+        }
+
+        .info .footer{
+            color: gray;
+        }
+
+        td{
+            padding: 7px;
+        }
+
+        td img{
+            width: 20px;
+        }
+
+        tr .social{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+
+
+    </style>
 </head>
 <body>
+<div class="container">
+    <div class="img">
+        <div class="detail-img">
+            <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVE1rprz8mm-Nr1yYg9Vd7FwpwAaToNwdx9g&s"
+                    alt="sofa"
+            />
+            <img
+                    src="https://png.pngtree.com/png-vector/20201128/ourmid/pngtree-sofa-png-image_2427023.jpg"
+                    alt="sofa"
+            /><img
+                src="https://atlas-content-cdn.pixelsquid.com/stock-images/transitional-3-seater-sofa-5A5vKl6-600.jpg"
+                alt="sofa"
+        /><img
+                src="https://png.pngtree.com/png-clipart/20190509/ourmid/pngtree-white-furniture-furnished-sofa-png-image_910051.jpg"
+                alt="sofa"
+        />
+        </div>
 
+        <img
+                src="https://png.pngtree.com/png-clipart/20210126/ourmid/pngtree-modern-furniture-living-room-sofa-design-with-top-view-png-image_2833264.jpg"
+                alt="png"
+        />
+    </div>
+
+    <div class="info">
+        <div class="detail-info">
+            <h2>Asgaard sofa</h2>
+            <p class="price">Rs. 250,000,000</p>
+            <p class="star">
+                <img
+                        src="https://www.pngarts.com/files/5/Star-Rating-4.5-PNG.png"
+                        alt="star"
+                />
+                <span>5 Customer Review</span>
+            </p>
+
+            <p style="font-size: 12px">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et error
+                architecto quia velit impedit repellat natus consequatur, sequi
+                iusto possimus atque ipsa fugiat!
+            </p>
+
+            <p class="title">Size</p>
+            <div class="size">
+                <button class="size-item">L</button>
+                <button class="size-item">XL</button>
+                <button class="size-item">XS</button>
+            </div>
+
+            <p class="title">Color</p>
+            <div class="color">
+                <button class="btn-color"></button>
+                <button class="btn-color"></button>
+                <button class="btn-color"></button>
+            </div>
+        </div>
+
+        <div class="qty">
+            <button class="btn-1">
+                <span>-</span>
+                <span>1</span>
+                <span>+</span>
+            </button>
+            <button class="btn-2">Add to cart</button>
+            <button class="btn-2">+ Compare</button>
+        </div>
+
+        <div class="footer">
+            <table>
+                <tr>
+                    <td>SKU</td>
+                    <td>: SS01</td>
+                </tr>
+                <tr>
+                    <td>Category</td>
+                    <td>: Sofas</td>
+                </tr>
+                <tr>
+                    <td>Tags</td>
+                    <td>: Sofa, Chair, Home, Shop</td>
+                </tr>
+                <tr>
+                    <td>Share</td>
+                    <td class="social">
+                        :
+                        <img
+                                src="https://cdn-icons-png.flaticon.com/128/10092/10092202.png"
+                                alt="fb"
+                        />
+                        <img
+                                src="https://cdn-icons-png.flaticon.com/128/10092/10092249.png"
+                                alt="in"
+                        />
+                        <img
+                                src="https://cdn-icons-png.flaticon.com/128/10092/10092328.png"
+                                alt="X"
+                        />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
 </body>
 </html>

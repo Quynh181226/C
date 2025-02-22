@@ -1,208 +1,220 @@
-<!--<!DOCTYPE html>-->
-<!--<html lang="vi">-->
-
-<!--<head>-->
-<!--    <meta charset="UTF-8">-->
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-<!--    <title>Firebase Authentication UI</title>-->
-<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">-->
-<!--    <style>-->
-<!--        * {-->
-<!--            margin: 0;-->
-<!--            padding: 0;-->
-<!--            box-sizing: border-box;-->
-<!--            font-family: Arial, sans-serif;-->
-<!--            color: #3e3c3d;-->
-<!--        }-->
-<!--        img{-->
-<!--            border-radius: 50%;-->
-<!--        }-->
-
-<!--        header {-->
-<!--            background-color: #009BE5;-->
-<!--        }-->
-<!--        header container :nth-of-type(1){-->
-<!--            display: flex;-->
-<!--            justify-content: flex-end;-->
-<!--        }-->
-<!--        header container :nth-of-type(2){-->
-<!--            display: flex;-->
-<!--            justify-content: space-between;-->
-<!--        }-->
-<!--        header ul container{-->
-<!--            display: flex;-->
-<!--            justify-content: flex-start;-->
-<!--        }-->
-<!--    </style>-->
-<!--</head>-->
-<!--<body>-->
-<!--    <header>-->
-<!--        <div class="container">-->
-<!--            <p>Go to docs</p>-->
-<!--            <i class="fa-solid fa-bell"></i>-->
-<!--            <img src="https://inkythuatso.com/uploads/thumbnails/800/2023/03/1-hinh-anh-ngay-moi-hanh-phuc-sieu-cute-inkythuatso-09-13-35-50.jpg" width="30" height="30">-->
-<!--        </div>-->
-<!--        <div class="container">-->
-<!--            <div class="header-left">-->
-<!--                <h1>Authentication</h1>-->
-<!--            </div>-->
-<!--            <div class="header-right">-->
-<!--                <button>Web setup</button>-->
-<!--                <i class="fa-solid fa-question"></i>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="container">-->
-<!--            <ul class="user-list">-->
-<!--                <a href="#" class="card">Users</a>-->
-<!--                <a href="#">Sign-in method</a>-->
-<!--                <a href="#">Templates</a>-->
-<!--                <a href="#">Usage</a>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!--    </header>-->
-<!--    <from>-->
-<!--        <div class="content">-->
-<!--            <div class="search">-->
-<!--                <i class="fa-solid fa-magnifying-glass"></i>-->
-<!--                <input type="text" placeholder="Search by email address, phone number, or user UID">-->
-<!--            </div>-->
-<!--            <div class="refresh">-->
-<!--                <button class="add">Add user</button>-->
-<!--                <i class="fa-solid fa-rotate-right refresh"></i>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </from>-->
-<!--<table>-->
-<!--    <tr>-->
-<!--            <p>No users for this project yet</p>-->
-<!--    </tr>-->
-<!--</table>-->
-<!--</body>-->
-
-<!--</html>-->
-
-
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Firebase Authentication UI</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/e724c329aa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=notifications" />
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-            color: #3e3c3d;
+        .bell{
+            color: rgb(255, 255, 255);
+            font-size: 15px;
         }
-        img {
+        .avata{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .avata img{
+            width: 25px;
+            height: 25px;
+            border: 0px;
             border-radius: 50%;
         }
-
-        header {
-            background-color: #009BE5;
-            padding: 10px;
-        }
-        .container {
+        .box-1-in{
             display: flex;
-            justify-content: space-between;
+            gap: 10px;
+            justify-content: center;
             align-items: center;
-            padding: 10px;
         }
-        .user-list {
-            list-style: none;
+        .box-1-out{
+            width: 600px;
+            height:35px ;
+            background-color: #009BE5;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 0px 10px;
+        }
+        .content-1{
+            color: #b9e8fe;
+            font-size: 12px;
+        }
+        .square{
+            font-size: 10px;
+            color: #009BE5;
+            width: 15px;
+            height: 15px;
+            border: 0px;
+            border-radius: 50%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box-2-out{
+            width: 600px;
+            height:35px ;
+            background-color: #009BE5;
+            box-sizing: border-box;
+            padding: 0px 10px;
+        }
+        .box-2-in{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .content-2{
+            color: white;
+            font-size: 20px;
+            box-sizing: border-box;
+            display: flex;
+            padding: 0px 10px;
+        }
+        .right{
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            margin-right: 5px;
+        }
+        .box-2{
+            border: 1px solid white;
+            border-radius: 5px;
+            font-size: 10px;
+            width: 70px;
+            height: 20px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            color: white;
+            font-weight: 500;
+        }
+        .box-3-in{
+            width: 600px;
             display: flex;
             gap: 15px;
+            background-color: #009BE5;
+            box-sizing: border-box;
+            padding: 0px 20px;
+            color: #b9e8fe;
         }
-        .user-list a {
-            text-decoration: none;
+        .special{
             color: white;
-            padding: 8px 12px;
-            border-radius: 5px;
-            background-color: rgba(255, 255, 255, 0.2);
+            padding-bottom: 10px;
+            border-bottom: 3px solid white;
         }
-        .content {
+        .left-main{
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        input[type="text"]{
+            display: block;
+            width: 300px;
+            border: 0px;
+            background-color:#F3F1EF;
+        }
+        .right-main{
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        button{
+            color: white;
+            background-color:#009BE5;
+            border: 0px;
+            height: 24px;
+            width: 80px;
+            border-radius: 3px;
+        }
+        main{
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+            background-color: rgb(243, 241, 239);
+            width: 500px;
             display: flex;
             justify-content: space-between;
-            padding: 15px;
+            height: 26px;
+            border-bottom: 1px solid #d1c1c1;
+            padding: 2px 10px;
+            box-sizing: border-box;
         }
-        .search {
+        .refresh{
+            font-size: 14px;
+            color: #807272;
+        }
+        footer{
+            justify-content: center;
             display: flex;
             align-items: center;
-            gap: 10px;
-            border: 1px solid #ccc;
-            padding: 5px;
-            border-radius: 5px;
+            width: 500px;
+            height:100px;
+            background-color: #f1f1f1;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
         }
-        .search input {
-            border: none;
-            outline: none;
-        }
-        .refresh {
+        section{
+            background-color: rgb(204, 247, 232);
+            width: 600px;
+            justify-content: center;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            gap: 10px;
-        }
-        table {
-            width: 100%;
-            margin-top: 20px;
-            text-align: center;
-            border-collapse: collapse;
-        }
-        table, th, td {
-            border: 1px solid #ccc;
-            padding: 10px;
+            height: 180px;
         }
     </style>
 </head>
-<body>
-<header>
-    <div class="container">
-        <p>Go to docs</p>
-        <i class="fa-solid fa-bell"></i>
-        <img src="https://inkythuatso.com/uploads/thumbnails/800/2023/03/1-hinh-anh-ngay-moi-hanh-phuc-sieu-cute-inkythuatso-09-13-35-50.jpg" width="30" height="30">
-    </div>
-    <div class="container">
-        <h1>Authentication</h1>
-        <div>
-            <button>Web setup</button>
-            <i class="fa-solid fa-question"></i>
-        </div>
-    </div>
-    <div class="container">
-        <ul class="user-list">
-            <li><a href="#" class="card">Users</a></li>
-            <li><a href="#">Sign-in method</a></li>
-            <li><a href="#">Templates</a></li>
-            <li><a href="#">Usage</a></li>
-        </ul>
-    </div>
-</header>
 
-<form>
-    <div class="content">
-        <div class="search">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="Search by email address, phone number, or user UID">
-        </div>
-        <div class="refresh">
-            <button class="add">Add user</button>
-            <i class="fa-solid fa-rotate-right refresh"></i>
+<body>
+<div class="box-1-out">
+    <div class="box-1-in">
+        <div class="content-1">Go to docs</div>
+        <div class="bell"><i class="fa-solid fa-bell"></i></div>
+        <div class="avata">
+            <img src="https://i.pinimg.com/736x/e6/5c/3c/e65c3cee11c6740d191a7c7b769c4723.jpg" alt="">
         </div>
     </div>
+</div>
+<div class="box-2-out">
+    <div class="box-2-in">
+        <div class="content-2">Authentication</div>
+        <div class="right">
+            <div class="box-2">Web setup</div>
+            <div class="square">
+                <i class="fa-solid fa-question"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="box-3-in">
+    <div class="special">Users</div>
+    <div>Sign-in method</div>
+    <div>Tempates</div>
+    <div>Usage</div>
+</div>
+<form action="">
+    <section>
+        <main>
+            <div class="left-main">
+                <div><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></i></div>
+                <input type="text" placeholder="Search by email address, phone number, or user UID" name="Content-search">
+            </div>
+            <div class="right-main">
+                <button>Add user</button>
+                <div><a href=""><i class="fa-solid fa-arrow-rotate-right refresh"></i></a></div>
+            </div>
+        </main>
+        <footer>No user for this project yet</footer>
+    </section>
 </form>
 
-<table>
-    <tr>
-        <td>No users for this project yet</td>
-    </tr>
-</table>
 </body>
+
 </html>
-
-
-
-
-
