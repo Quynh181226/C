@@ -44,37 +44,23 @@ h1{
     font-style: normal;
     font-weight: bold;
 }
-.menu {
+.menu-desktop{
     list-style: none;
     display: flex;
     gap: 20px;
 }
 
-.menu a {
+.menu-desktop a {
     text-decoration: none;
     font-size: 12px;
 }
 a{
     color: var(--heading-color);
 }
-
-.content-1 {
-    max-width: 50%;
-}
-
-.content-1 h1 {
-    color: var(--heading-color);
-    font-size: 48px;
-}
-
-.content-1 p {
-    font-size: 20px;
-    margin-top: 10px;
-}
-
 .image-1 img {
-    width: 300px;
-    /*margin-left: 20px;*/
+    width: 400px;
+    max-width: 100%;
+    height: auto;
 }
 
 .button-1 {
@@ -96,17 +82,6 @@ a{
     margin-left: 5px;
     color: var(--bg-color);
 }
-
-.content-1 i {
-    color: var(--primary);
-    border: 11px solid #222222;
-    border-radius: 50%;
-    margin-left: 10px;
-}
-
-.content-1 p {
-    font-size: 18px;
-}
 .title-1 {
     width: 100%;
     text-align: left;
@@ -116,15 +91,12 @@ a{
     font-size: 30px;
     font-weight: 900px;
 }
-.content-5[title$="3"] {
+.title-3 {
     font-size: 50px;
 }
-.article {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 60px;
-}
+/*.content-5[title$="3"] {*/
+/*    font-size: 50px;*/
+/*}*/
 #text{
     width: 50%;
 }
@@ -155,10 +127,6 @@ a{
 }
 .image-1{
     margin-bottom: 30px;
-}
-.content-3 {
-    flex: 1;
-    flex-direction: column;
 }
 
 .title-text {
@@ -207,27 +175,23 @@ a{
     align-items: center;
     gap: 5px;
 }
-/*.nav-bar{*/
-/*    display: none;*/
-/*    height: 30px;*/
-/*    width: 30px;*/
-/*}*/
-/*@media screen and (max-width: 767px) {*/
-/*    body {*/
-/*        padding: 0;*/
-/*        gap: 6px;*/
-/*    }*/
-/*    .nav-bar{*/
-/*        display: block;*/
-/*        background-color: rebeccapurple;*/
-/*    }*/
-/*}*/
+
+nav .menu-desktop {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+nav #menu-mobile {
+    display: none;
+    font-size: 24px;
+    cursor: pointer
+}
 .icon{
     color: #b5ff66;
     border-bottom: 2px solid #b5ff66;
 }
 .social{
-    color: #b5ff66;
+    /*color: var(--primary) !important; ???? whyy*/
     font-size: 20px;
     margin-right: 10px;
 }
@@ -245,39 +209,85 @@ a{
 .main-2{
     width: 80%;
     margin-top: 20px;
-    margin-bottom: 180px;
+    margin-bottom: 80px;
 }
 .main-3 {
-    width: 80%;
-    margin-bottom: 180px;
+    width: 100%;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .main-4 {
-    width: 80%;
-    margin-bottom: 180px;
+    /*width: 80%;*/
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /*margin-top: 60px;*/
+    /*border-bottom: 1px solid #444;*/
 }
 .main-5{
-    width: 80%;
+    width: 100%;
     margin-bottom: 380px;
     border-top: 1px solid #444;
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: space-between;*/
 }
 .main-6{
-    width: 80%;
+    width: 100%;
     border-top: 1px solid #444;
 }
-.content-4{
-    margin-top: 80px;
-    width: 60%;
+.article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 180px;
 }
 footer {
     margin-top: 50px;
 }
-.content-5{
-    width: 50%;
+.content-1 {
+    /*max-width: 50%;*/
+    margin-bottom: 15px;
 }
+
+.content-1 h1 {
+    color: var(--heading-color);
+    font-size: 48px;
+}
+
+.content-1 p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+.content-1 i {
+    color: var(--primary);
+    border: 11px solid #222222;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.content-3 {
+    /*flex: 1;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*height: 100%;*/
+}
+.content-4{
+    margin-top: 50px;
+}
+/*.content-5{*/
+/*    width: 100%;*/
+/*}*/
 .form-text{
     margin-top: 40px;
-     width: 50%;
- }
+    width: 100%;
+    /*margin-left: 200px;*/
+}
 form {
     display: flex;
     flex-direction: column;
@@ -305,3 +315,42 @@ button {
 /*section {*/
 /*    margin-bottom: 80px;*/
 /*}*/
+
+
+@media screen and (max-width: 767px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    nav .menu-desktop {
+        display: none;
+    }
+
+    nav #menu-mobile {
+        display: block;
+    }
+    .article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-1,
+    .main-2,
+    .main-3,
+    .main-4,
+    .main-5,
+    .main-6 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
