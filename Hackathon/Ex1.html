@@ -1,208 +1,142 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Manrope:wght@200..800&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Text:ital@0;1&family=Manrope:wght@200..800&display=swap"
-        rel="stylesheet">
-    <!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"-->
-    <!--        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />-->
-    <!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />-->
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Text:ital@0;1&family=Heebo:wght@100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Document</title>
     <link rel="stylesheet" href="1.css">
+
 </head>
 
 <body>
-    <header>
-        <div class="logo">Robert Garcia</div>
-        <nav>
-            <ul class="menu-desktop">
-                <li><a href="#">Work</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <div id="menu-mobile"><i class="fa-solid fa-bars"></i></div>
-        </nav>
-    </header>
-    <section class="main-1">
-        <div class="content-1">
-            <h1>Hi, I am</h1>
-            <h1>Robert Garcia.</h1>
-            <p>A Sydney based front-end developer passionate about building accessible and user friendly websites.</p>
-            <button class="button-1"><span>Contact Me</span><span id="bull">&#9679;</span></button>
-            <i id="linked" class="fa-brands fa-linkedin-in"></i>
-            <i id="github" class="fa-brands fa-github"></i>
+<header>
+<!--    <nav>-->
+<!--        <a href="#">Work</a>-->
+<!--        <a href="#">Blog</a>-->
+<!--        <a href="#">Contact</a>-->
+<!--    </nav>-->
+    <nav>
+        <ul class="menu-desktop">
+            <li><a href="#">Work</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div id="menu-mobile"><i class="fa-solid fa-bars"></i></div>
+    </nav>
+    <div class="main">
+        <div id="content-1">
+            <h2>Hi, I am John,</h2>
+            <h2>Creative Technologist</h2>
+            <p> Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                duis
+                enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
         </div>
-        <figure class="image-1">
-            <img src="./assets/image.png" width="663" height="400">
+        <div id="content-2">
+            <img  src="./assets/John.png" alt="John Doe">
+        </div>
+    </div>
+    <button id="button-1">Download Resume</button>
+</header>
+<div class="nav-1">
+    <p>Recent posts</p>
+    <a href="#" style="color: #00A8CC">View all</a>
+</div>
+
+<section class="main-2">
+    <div class="container-1">
+        <div id="content-3">
+            <h4>Making a design system from scratch</h4>
+            <div class="date-left">
+                <span>12 Feb 2020</span>
+                <span>Figma, Icon Design</span>
+            </div>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                duis
+                enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </div>
+        <div class="content-4">
+            <h4>Creating pixel perfect icons in Figma</h4>
+            <div class="date-right">
+                <span>12 Feb 2020</span>
+                <span>Design, Pattern</span>
+            </div>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                duis
+                enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </div>
+    </div>
+</section>
+
+<div class="headers">
+    <p>Featured works</p>
+</div>
+<div class="container">
+    <div class="picture">
+        <figure>
+            <img src="./assets/designing.png">
         </figure>
-    </section>
-    <!-- <hr> -->
-    <!--    id="main"-->
-    <!--   <main>-->
-    <section class="main-2">
-        <div class="title-1">
-            <h1>Featured Projects</h1>
-            <p id="text">Here are some of the selected projects that showcase my passion for front-end development.</p>
+        <div>
+            <h3>Designing Dashboards</h3>
+            <div class="button-text">
+                <button>2020</button>
+                <p>Dashboard</p>
+            </div>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
         </div>
-        <div class="article">
-            <div class="image-container">
-                <div class="border-1">
-                    <a href="#">Conceptual Work</a>
-                    <img src="./assets/work.png" width="350" height="240">
-                </div>
+    </div>
+
+    <div class="picture">
+        <figure>
+            <img src="./assets/vibrant.png">
+        </figure>
+        <div>
+            <h3>Vibrant Portraits of 2020</h3>
+            <div class="button-text">
+                <button>2018</button>
+                <p>Illustration</p>
             </div>
-            <div class="content-3">
-                <p class="title-text">Promotional landing page for our favorite show</p>
-                <p class="text-content">Teamed up with a designer to breathe life into a promotional webpage for our
-                    beloved
-                    show, Adventure
-                    Time. Delivered a fully responsive design with dynamic content capabilities, seamlessly integrating
-                    a newsletter feature to keep fans updated with the latest adventures.</p>
-                <div class="document-1">
-                    <p>PROJECT INFO</p>
-                    <div class="text-row1">
-                        <span>Year</span>
-                        <span>2023</span>
-                    </div>
-                    <div class="text-row2">
-                        <span>Role</span>
-                        <span>Front-end Developer</span>
-                    </div>
-                </div>
-                <div class="link">
-                    <a href="#" class="icon">LIVE DEMO <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    <a href="#" class="icon">SEE ON GITHUB <i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
         </div>
-        <section class="main-3">
-            <div class="article">
-                <div class="image-container">
-                    <div class="border-1">
-                        <img src="./assets/image 10.png" width="350" height="240">
-                    </div>
-                </div>
-                <div class="content-6">
-                    <p class="title-text">Blog site for World News</p>
-                    <p class="text-content"> Mastered CSS Grid complexities in building an innovative news homepage,
-                        navigating intricate design decisions for a seamless user experience. Leveraged the challenge to
-                        enhance skills in front-end development.</p>
-                    <div class="document-1">
-                        <p>PROJECT INFO</p>
-                        <div class="text-row1">
-                            <span>Client</span>
-                            <span>World News</span>
-                        </div>
-                        <div class="text-row2">
-                            <span>Year</span>
-                            <span>2022</span>
-                        </div>
-                        <div class="text-row3">
-                            <span>Role</span>
-                            <span>Front-end Developer</span>
-                        </div>
-                    </div>
-                    <div class="link">
-                        <a href="#" class="icon">LIVE DEMO <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
+    </div>
+
+    <div class="picture">
+        <figure>
+            <img src="./assets/day36.png">
+        </figure>
+        <div>
+            <h3>36 Days of Malayalam type</h3>
+            <div class="button-text">
+                <button>2018</button>
+                <p>Typographia</p>
             </div>
-        </section>
-        <section class="main-4">
-            <div class="article">
-                <div class="image-container">
-                    <div class="border-1">
-                        <a href="#">Challenge</a>
-                        <img src="./assets/image 9.png" width="350" height="240">
-                    </div>
-                </div>
-                <div class="content-3">
-                    <p class="title-text">E-commerce product page</p>
-                    <p class="text-content">Successfully crafted an engaging product page featuring a dynamic lightbox
-                        gallery and seamless cart functionality, showcasing proficiency in JavaScript development.</p>
-                    <div class="document-1">
-                        <p>PROJECT INFO</p>
-                        <div class="text-row1">
-                            <span>Year</span>
-                            <span>2023</span>
-                        </div>
-                        <div class="text-row2">
-                            <span>Role</span>
-                            <span>Front-end Developer</span>
-                        </div>
-                    </div>
-                    <div class="link">
-                        <a href="#" class="icon">LIVE DEMO <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        <a href="#" class="icon">SEE ON GITHUB <i class="fa-brands fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="main-5">
-            <div class="article">
-                <div class="title-2">
-                    <h1>ABOUT ME</h1>
-                </div>
-                <div class="content-4">
-                    <p class="title-text">I am a front-end developer based in Sydney.</p>
-                    <p class="title-text">Has Mechanical Engineering background.</p>
-                    <p class="text-content">Successfully crafted an engaging product page featuring a dynamic lightbox
-                        gallery and seamless cart functionality, showcasing proficiency in JavaScript development.</p>
-                    <div class="link">
-                        <a href="#" class="icon">MORE ABOUT ME</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="main-6">
-            <div class="article">
-                <div class="content-5">
-                    <h1 class="title-3">Let’s connect</h1>
-                    <p class="line-text">Say hello at<span>robertgarcia@gmail.com</span></p>
-                    <p class="line-text">For more info, here’s my<span>resume</span></p>
-                    <div class="social">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                        <i class="fa-brands fa-github"></i>
-                        <i class="fa-brands fa-x-twitter"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                    </div>
-                    <footer>&copy 2023 Robert Garcia</footer>
-                </div>
-                <!--                <div class="forms">-->
-                <div class="form-text">
-                    <form>
-                        <label>Name</label>
-                        <input type="text" placeholder="John Doe" value="John Doe">
-                        <label>Email</label>
-                        <input type="email" placeholder="Email">
-                        <label>Subject</label>
-                        <input type="text" placeholder="Subject">
-                        <label>Message</label>
-                        <textarea placeholder="Message" rows="4"></textarea>
-                        <button type="submit" style="color: black; width: 140px;">SUBMIT</button>
-                    </form>
-                </div>
-                <!--                </div>-->
-            </div>
-            <!--            value="Submit"-->
-            <!--<form>-->
-            <!--    <input type="text" id="nam" placeholder="text">-->
-            <!--</form>-->
-        </section>
-        <!--   </main>-->
-        <script src="https://kit.fontawesome.com/7b988689d5.js" crossorigin="anonymous"></script>
-        <!--        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"-->
-        <!--            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"-->
-        <!--            crossorigin="anonymous"></script>-->
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="icon">
+        <div><i class="fa-brands fa-square-facebook"></i></div>
+        <div><i class="fa-brands fa-instagram"></i></div>
+        <div><i class="fa-brands fa-twitter"></i></div>
+        <div><i class="fa-brands fa-linkedin"></i></div>
+    </div>
+    <div id="text"> Copyright &copy;2020 All rights reserved</div>
+</footer>
 </body>
 
 </html>

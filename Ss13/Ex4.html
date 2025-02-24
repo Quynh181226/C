@@ -1,0 +1,495 @@
+Dưới đây là mã HTML & CSS để tạo giao diện giống như hình bạn gửi. Mình sẽ sử dụng Flexbox và Grid để bố cục hợp lý.
+
+📌 Cấu trúc giao diện:
+Header với tiêu đề "Product Comparison".
+Khu vực chứa sản phẩm:
+Một nút "Go to Product page" bên trái.
+Hai sản phẩm chính với thông tin chi tiết.
+Một nút "Add A Product" bên phải.
+Bảng so sánh chi tiết sản phẩm.
+📜 Code HTML & CSS
+html
+Sao chép
+Chỉnh sửa
+
+🎨 CSS (styles.css)
+css
+Sao chép
+Chỉnh sửa
+
+📌 Giải thích cách làm
+Bố cục tổng thể:
+
+Header (.header) chứa tiêu đề và đường dẫn.
+Khu vực sản phẩm (.product-section) dùng Flexbox để chia làm 3 phần:
+left-box (nút "View More").
+product-cards (chứa hình ảnh & thông tin sản phẩm).
+right-box (nút "Choose a Product").
+Bảng so sánh (.comparison-table) sử dụng Grid Layout.
+CSS chính:
+
+.product-cards dùng display: flex; để sản phẩm nằm cạnh nhau.
+.comparison-table dùng display: flex; với .row để tạo hàng.
+.column có flex: 1; giúp chia cột đều nhau.
+Nút chọn sản phẩm (button) có màu vàng (background: gold;).
+✅ Kết quả đạt được:
+✔ Giao diện tương tự hình mẫu.
+✔ Sử dụng HTML + CSS thuần, dễ dàng tích hợp với JavaScript sau này.
+✔ Bố cục gọn gàng, dễ bảo trì.
+
+Bạn kiểm tra xem có cần chỉnh sửa gì thêm không nhé! 🚀
+
+
+
+
+
+
+
+Bạn đã nói:
+
+ChatGPT đã nói:
+Dưới đây là mã HTML & CSS để tạo trang giỏ hàng giống như hình ảnh bạn cung cấp.
+
+📌 Cấu trúc giao diện
+Bảng giỏ hàng hiển thị sản phẩm, giá, số lượng và tổng phụ.
+Phần "Cart Totals" (Tổng giỏ hàng) hiển thị tổng tiền.
+Thanh dịch vụ với các biểu tượng (chất lượng cao, bảo hành, vận chuyển miễn phí, hỗ trợ 24/7).
+📜 Code HTML & CSS
+html
+Sao chép
+Chỉnh sửa
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Shopping Cart Section -->
+<section class="cart-section">
+    <table class="cart-table">
+        <thead>
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="product-info">
+                <img src="sofa1.png" alt="Asgaard Sofa">
+                <span>Asgaard Sofa</span>
+            </td>
+            <td>Rs. 250,000.00</td>
+            <td><input type="number" value="1"></td>
+            <td>Rs. 250,000.00 <button class="remove-item">🗑</button></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!-- Cart Totals -->
+    <div class="cart-totals">
+        <h3>Cart Totals</h3>
+        <p>Subtotal: <span>Rs. 250,000.00</span></p>
+        <p>Total: <span class="total-price">Rs. 250,000.00</span></p>
+        <button class="checkout-btn">Check Out</button>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="services">
+    <div class="service-item">
+        <span>🏆</span>
+        <h4>High Quality</h4>
+        <p>crafted from top materials</p>
+    </div>
+    <div class="service-item">
+        <span>🛡</span>
+        <h4>Warranty Protection</h4>
+        <p>Over 2 years</p>
+    </div>
+    <div class="service-item">
+        <span>🚚</span>
+        <h4>Free Shipping</h4>
+        <p>Order over 150 $</p>
+    </div>
+    <div class="service-item">
+        <span>📞</span>
+        <h4>24 / 7 Support</h4>
+        <p>Dedicated support</p>
+    </div>
+</section>
+</body>
+</html>
+🎨 CSS (styles.css)
+css
+Sao chép
+Chỉnh sửa
+/* Reset CSS */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, sans-serif;
+}
+
+/* Cart Section */
+.cart-section {
+width: 90%;
+margin: 30px auto;
+display: flex;
+justify-content: space-between;
+}
+
+/* Table Styling */
+.cart-table {
+width: 65%;
+border-collapse: collapse;
+}
+
+.cart-table th, .cart-table td {
+border-bottom: 1px solid #ddd;
+padding: 12px;
+text-align: left;
+}
+
+.product-info {
+display: flex;
+align-items: center;
+}
+
+.product-info img {
+width: 50px;
+margin-right: 10px;
+}
+
+input[type="number"] {
+width: 50px;
+padding: 5px;
+text-align: center;
+}
+
+.remove-item {
+background: none;
+border: none;
+cursor: pointer;
+}
+
+/* Cart Totals */
+.cart-totals {
+width: 30%;
+background: #f8f5f0;
+padding: 20px;
+border-radius: 8px;
+}
+
+.cart-totals h3 {
+margin-bottom: 15px;
+}
+
+.cart-totals p {
+display: flex;
+justify-content: space-between;
+font-weight: bold;
+}
+
+.total-price {
+color: #d39e00;
+}
+
+.checkout-btn {
+width: 100%;
+padding: 10px;
+background: black;
+color: white;
+border: none;
+cursor: pointer;
+margin-top: 15px;
+}
+
+/* Services Section */
+.services {
+display: flex;
+justify-content: space-around;
+background: #f8f5f0;
+padding: 20px;
+margin-top: 30px;
+}
+
+.service-item {
+text-align: center;
+}
+
+.service-item span {
+font-size: 30px;
+display: block;
+margin-bottom: 10px;
+}
+📌 Giải thích cách làm
+Bảng giỏ hàng (.cart-table):
+
+Dùng <table> để hiển thị danh sách sản phẩm.
+    Cột đầu tiên chứa ảnh + tên sản phẩm.
+    Cột số lượng có <input type="number"> để thay đổi số lượng.
+    Cột cuối cùng có nút 🗑 để xóa sản phẩm.
+    Tổng giỏ hàng (.cart-totals):
+
+    Được bọc trong một <div> có background: #f8f5f0; để làm nổi bật.
+        Có tổng tiền & nút "Check Out".
+        Dịch vụ (.services):
+
+        Hiển thị 4 biểu tượng đại diện cho dịch vụ.
+        Sử dụng display: flex; justify-content: space-around; để căn đều.
+        ✅ Kết quả đạt được:
+        ✔ Giao diện giống hình mẫu.
+        ✔ HTML & CSS gọn gàng, dễ chỉnh sửa.
+        ✔ Dễ dàng tích hợp JavaScript để cập nhật số lượng giỏ hàng.
+
+        Bạn kiểm tra xem có cần thay đổi gì không nhé! 🚀
+
+
+
+
+
+
+        Bạn đã nói:
+
+        ChatGPT đã nói:
+        Dưới đây là mã HTML & CSS để tạo trang thanh toán giống với hình ảnh bạn cung cấp.
+
+        📌 Cấu trúc giao diện
+        Phần "Billing details" (Chi tiết thanh toán):
+        Các trường nhập thông tin người mua hàng (Tên, địa chỉ, số điện thoại,...).
+        Phần "Order Summary" (Tóm tắt đơn hàng):
+        Hiển thị sản phẩm đã chọn, tổng tiền, phương thức thanh toán.
+        Có nút "Place order" để đặt hàng.
+        📜 Code HTML & CSS
+        html
+        Sao chép
+        Chỉnh sửa
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Checkout Page</title>
+            <link rel="stylesheet" href="styles.css">
+        </head>
+        <body>
+        <section class="checkout-container">
+            <!-- Billing Details -->
+            <div class="billing-details">
+                <h2>Billing details</h2>
+                <form>
+                    <div class="name-fields">
+                        <input type="text" placeholder="First Name" required>
+                        <input type="text" placeholder="Last Name" required>
+                    </div>
+                    <input type="text" placeholder="Company Name (Optional)">
+                    <select>
+                        <option>Sri Lanka</option>
+                        <option>Vietnam</option>
+                        <option>USA</option>
+                    </select>
+                    <input type="text" placeholder="Street Address" required>
+                    <input type="text" placeholder="Town / City" required>
+                    <select>
+                        <option>Western Province</option>
+                        <option>Eastern Province</option>
+                    </select>
+                    <input type="text" placeholder="ZIP Code" required>
+                    <input type="text" placeholder="Phone" required>
+                    <input type="email" placeholder="Email address" required>
+                    <textarea placeholder="Additional information"></textarea>
+                </form>
+            </div>
+
+            <!-- Order Summary -->
+            <div class="order-summary">
+                <h2>Product <span>Subtotal</span></h2>
+                <p>Asgaard sofa x 1 <span>Rs. 250,000.00</span></p>
+                <h3>Subtotal: <span>Rs. 250,000.00</span></h3>
+                <h3>Total: <span class="total-price">Rs. 250,000.00</span></h3>
+
+                <!-- Payment Methods -->
+                <div class="payment-methods">
+                    <label><input type="radio" name="payment" checked> Direct Bank Transfer</label>
+                    <p class="payment-info">
+                        Make your payment directly into our bank account...
+                    </p>
+                    <label><input type="radio" name="payment"> Cash On Delivery</label>
+                </div>
+
+                <!-- Place Order Button -->
+                <button class="place-order">Place order</button>
+            </div>
+        </section>
+        </body>
+        </html>
+        🎨 CSS (styles.css)
+        css
+        Sao chép
+        Chỉnh sửa
+        /* Reset CSS */
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+        }
+
+        /* Container */
+        .checkout-container {
+        width: 90%;
+        margin: 30px auto;
+        display: flex;
+        justify-content: space-between;
+        }
+
+        /* Billing Details */
+        .billing-details {
+        width: 45%;
+        }
+
+        .billing-details h2 {
+        margin-bottom: 15px;
+        }
+
+        .billing-details form input,
+        .billing-details form select,
+        .billing-details form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        }
+
+        .name-fields {
+        display: flex;
+        gap: 10px;
+        }
+
+        .name-fields input {
+        width: 50%;
+        }
+
+        /* Order Summary */
+        .order-summary {
+        width: 45%;
+        background: #f8f5f0;
+        padding: 20px;
+        border-radius: 8px;
+        }
+
+        .order-summary h2,
+        .order-summary h3 {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        }
+
+        .order-summary p {
+        display: flex;
+        justify-content: space-between;
+        }
+
+        .total-price {
+        color: #d39e00;
+        }
+
+        /* Payment Methods */
+        .payment-methods {
+        margin-top: 15px;
+        }
+
+        .payment-methods label {
+        display: block;
+        margin-bottom: 5px;
+        }
+
+        .payment-info {
+        font-size: 14px;
+        color: gray;
+        }
+
+        /* Place Order Button */
+        .place-order {
+        width: 100%;
+        padding: 10px;
+        background: black;
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin-top: 15px;
+        }
+        📌 Giải thích cách làm
+        Chi tiết thanh toán (.billing-details):
+
+        Form có các trường nhập thông tin cá nhân.
+        Hai ô nhập "First Name" và "Last Name" được đặt cạnh nhau.
+        Selectbox cho quốc gia và tỉnh/thành phố.
+        Tóm tắt đơn hàng (.order-summary):
+
+        Hiển thị sản phẩm và tổng tiền.
+        Các phương thức thanh toán có radio button.
+        Nút "Place Order" (.place-order):
+
+        Nút lớn, màu đen, chữ trắng.
+        Dễ nhìn và nổi bật để người dùng bấm đặt hàng.
+        ✅ Kết quả đạt được:
+        ✔ Giao diện giống hình mẫu.
+        ✔ Thiết kế đẹp, đơn giản, dễ chỉnh sửa.
+        ✔ Dễ dàng tích hợp thanh toán thực tế bằng JavaScript hoặc Backend.
+
+        Bạn kiểm tra xem có cần chỉnh sửa gì không nhé! 🚀
+
+
+
+
+
+
+        Bạn đã nói:
+
+        ChatGPT đã nói:
+        Bạn đang muốn tái tạo giao diện Blog như trong hình bằng HTML & CSS đúng không? Dưới đây là code để thiết kế trang blog hiển thị bài viết, danh mục, và bài đăng gần đây.
+
+        📜 Code HTML & CSS cho Blog Layout
+        html
+        Sao chép
+        Chỉnh sửa
+
+        📌 Giải thích cách làm
+        Bố cục 2 cột (.container)
+
+        Bên trái là danh sách bài viết (.blog-posts).
+        Bên phải là sidebar (.sidebar) gồm ô tìm kiếm, danh mục, bài đăng gần đây.
+        Bài viết (.post)
+
+        Hiển thị ảnh, tiêu đề, ngày đăng, danh mục.
+        Có nút "Read more" để đọc tiếp.
+        Danh mục (.categories)
+
+        Hiển thị các danh mục có số lượng bài viết.
+        Bài viết gần đây (.recent-posts)
+
+        Có hình thu nhỏ, tiêu đề và ngày đăng.
+        ✨ Kết quả đạt được
+        ✔ Giao diện blog giống hình mẫu.
+        ✔ Thiết kế gọn gàng, dễ đọc, dễ chỉnh sửa.
+        ✔ Có sidebar với danh mục và bài viết gần đây.
+
+        Bạn kiểm tra xem có cần thay đổi gì không nhé! 🚀
+
+
+
+
+
+
+
+
+b

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Page</title>
+  <style>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Container Layout */
+  .container {
+    display: flex;
+    width: 90%;
+    margin: 30px auto;
+    gap: 20px;
+  }
+
+  /* Blog Posts */
+  .blog-posts {
+    width: 70%;
+  }
+
+  .post {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .post img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .post-info {
+    display: flex;
+    gap: 15px;
+    margin: 10px 0;
+    font-size: 14px;
+    color: gray;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  .post p {
+    color: #555;
+  }
+
+  .post a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    width: 30%;
+  }
+
+  /* Search Bar */
+  .search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  /* Categories */
+  .categories h3,
+  .recent-posts h3 {
+    margin: 20px 0 10px;
+  }
+
+  .categories ul,
+  .recent-posts ul {
+    list-style: none;
+  }
+
+  .categories li,
+  .recent-posts li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    font-size: 14px;
+  }
+
+  /* Recent Posts */
+  .recent-posts li {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .recent-posts li img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+
+  .recent-posts a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+  }</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+<div class="container">
+  <!-- Blog Posts Section -->
+  <div class="blog-posts">
+    <article class="post">
+      <img src="laptop.jpg" alt="Blog Image">
+      <div class="post-info">
+        <span>📅 14 Oct 2022</span>
+        <span>🏷️ Wood</span>
+      </div>
+      <h2>Going all-in with millennial design</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...</p>
+      <a href="#">Read more</a>
+    </article>
+
+    <article class="post">
+      <img src="planner.jpg" alt="Blog Image">
+      <div class="post-info">
+        <span>📅 14 Oct 2022</span>
+        <span>🏷️ Handmade</span>
+      </div>
+      <h2>Planning for creative projects</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...</p>
+      <a href="#">Read more</a>
+    </article>
+  </div>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="search-bar">
+      <input type="text" placeholder="Search...">
+    </div>
+
+    <div class="categories">
+      <h3>Categories</h3>
+      <ul>
+        <li>Crafts <span>2</span></li>
+        <li>Design <span>8</span></li>
+        <li>Handmade <span>7</span></li>
+        <li>Interior <span>1</span></li>
+        <li>Wood <span>6</span></li>
+      </ul>
+    </div>
+
+    <div class="recent-posts">
+      <h3>Recent Posts</h3>
+      <ul>
+        <li><img src="laptop.jpg" alt=""><a href="#">Going all-in with millennial design</a><span>03 Aug 2022</span></li>
+        <li><img src="decor.jpg" alt=""><a href="#">Exploring new ways of decorating</a><span>03 Aug 2022</span></li>
+        <li><img src="handmade.jpg" alt=""><a href="#">Handmade pieces that took time to make</a><span>03 Aug 2022</span></li>
+        <li><img src="milan.jpg" alt=""><a href="#">Modern home in Milan</a><span>03 Aug 2022</span></li>
+        <li><img src="office.jpg" alt=""><a href="#">Colorful office redesign</a><span>03 Aug 2022</span></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
+</body>
+</html>
+
+
+

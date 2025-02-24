@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Comparison</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      background: #F5F5F5;
+      padding: 20px;
+    }
+
+    /* Product Section */
+    .product-section {
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .product-info {
+      display: flex;
+      width: 90%;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .left-box, .right-box {
+      width: 20%;
+    }
+
+    .product-cards {
+      display: flex;
+      gap: 30px;
+    }
+
+    .product {
+      background: #FFF;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .product img {
+      width: 100px;
+      height: auto;
+    }
+
+    /* Table */
+    .comparison-table {
+      width: 90%;
+      margin: 30px auto;
+      border-collapse: collapse;
+    }
+
+    .row {
+      display: flex;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .column {
+      flex: 1;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .header .column {
+      font-weight: bold;
+      background: #F5F5F5;
+    }
+
+    /* Button */
+    button {
+      padding: 8px 15px;
+      background: gold;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+  <h2>Product Comparison</h2>
+  <p>Home > Comparison</p>
+</header>
+
+<!-- Product Section -->
+<section class="product-section">
+  <div class="product-info">
+    <div class="left-box">
+      <h3>Go to Product page for more Products</h3>
+      <a href="#">View More</a>
+    </div>
+    <div class="product-cards">
+      <div class="product">
+        <img src="sofa1.png" alt="Asgaard Sofa">
+        <h4>Asgaard Sofa</h4>
+        <p>Rs. 250,000.00</p>
+        <span>⭐ 4.7 | 204 Reviews</span>
+      </div>
+      <div class="product">
+        <img src="sofa2.png" alt="Outdoor Sofa Set">
+        <h4>Outdoor Sofa Set</h4>
+        <p>Rs. 224,000.00</p>
+        <span>⭐ 4.2 | 145 Reviews</span>
+      </div>
+    </div>
+    <div class="right-box">
+      <h3>Add A Product</h3>
+      <button>Choose a Product ⏷</button>
+    </div>
+  </div>
+</section>
+
+<!-- Comparison Table -->
+<section class="comparison-table">
+  <div class="row header">
+    <div class="column">General</div>
+    <div class="column">Asgaard Sofa</div>
+    <div class="column">Outdoor Sofa Set</div>
+  </div>
+  <div class="row">
+    <div class="column">Sales Package</div>
+    <div class="column">1 sectional sofa</div>
+    <div class="column">1 Three Seater, 2 Single Seater</div>
+  </div>
+  <div class="row">
+    <div class="column">Model Number</div>
+    <div class="column">TFCBLI9R8L6SRHS</div>
+    <div class="column">DTUBLI9R8L568</div>
+  </div>
+  <div class="row">
+    <div class="column">Secondary Material</div>
+    <div class="column">Solid Wood</div>
+    <div class="column">Solid Wood</div>
+  </div>
+  <div class="row">
+    <div class="column">Configuration</div>
+    <div class="column">L-shaped</div>
+    <div class="column">L-shaped</div>
+  </div>
+  <div class="row">
+    <div class="column">Upholstery Material</div>
+    <div class="column">Fabric + Cotton</div>
+    <div class="column">Fabric + Cotton</div>
+  </div>
+</section>
+</body>
+</html>
