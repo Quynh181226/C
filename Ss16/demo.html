@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <!-- starsWith(): kiểm tra chuỗi có bắt đầu bằng 1 chuỗi con không
+endsWith(): kiểm tra chuỗi có kết thúc bằng 1 chuỗi con không
+let str = 'JavaScript';
+// non-numeric string
+// giá trị có chứa ký tự không phải là số sẽ chuyển thành NaN
+result = 'bye' - 'world';
+console.log(result); // NaN
+
+result = 4 - 'bye';
+console.log(result); // NaN
+
+result = true + undefined;
+console.log(result);  // NaN -->
+<!--    <script>-->
+<!--        let student = "Tran Van A";-->
+<!--        let student = "Tran Van B";-->
+<!--        let concat = student + student1;-->
+<!--        alert(concat);-->
+<!--        let sentence = `$(student)-&#45;&#45;$(student1)`;-->
+<!--        alert(sentence);-->
+<!--        let result = "Hello Word";-->
+<!--        demoSilde.Silde="Hello Word1";-->
+<!--    </script>-->
+
+<!--Bai toan-->
+<!--Cho nguoi dung nhap vao so thu nhat -->
+<!--Cho nguoi dung nhap vao so thu hai-->
+<!--Tinh tong 2 so va hien thi ket qua-->
+<!--Ra man hinh console-->
+
+<!--<script>-->
+<!--    // let name =prompt("Ten cua toi la");-->
+<!--    let numberA =prompt("Moi banj nhap chuoi");-->
+<!--    let number-->
+<!--</script>-->
+    //alert("Hello world")
+
+    //script//
+    //biến
+
+    //var
+    var fullname = "Le Phuong Linh";
+
+    //let
+    let age = 18;
+
+    //const
+    const birthday = "1/1/2006";
+
+    //sdung bien
+    //alert(fullname); //lẩy ra đc giá trị
+    age;
+    birthday;
+
+    fullname = "Tú Sena"; // gán lại gtri
+    //alert(fullname);
+
+    var fullname = "Xemesi"; // khai báo lại gtri
+    // alert(fullname);
+
+    age = 19;
+    //alert(age); //gán lại gtri
+
+    //let age = 18;
+    //alert(age);  //lỗi, ko thể khai báo lại
+
+    let random;
+    //alert(random); -> hiện undefined
+
+    let number1 = 3;
+    let number2 = 2;
+
+    alert(number1 + number2);
+    alert(number1 - number2);
+    alert(number1 * number2);
+    alert(number1 / number2);
+    alert(number1 % number2); //chia lấy dư
+    alert(number1 ** number2); //số mũ
+
+    //string
+    let student = "Trần Văn A";
+    let student02 = 'Trần Văn B';
+    let student03 = `Tan Van C`;
+
+    alert(student);
+    alert(student02);
+    alert(student03);
+
+    let concat = student + " " + student02; //nối liền 2 chuỗi với nhau
+    //cho thêm khoảng trắng để cách ra
+    alert(concat);
+
+    let sentence = '${student} ---- ${student02}';
+    alert(sentence);
+
+    let result = "Hello world";
+    let upper = result.toUpperCase(); //viết hoa hết
+    alert(upper);
+    let lower = result.toLowerCase();
+
+    let demo = "    Hello world    ";
+    alert(demo.trim());
+
+    let demoSlice = "hello world jdieie";
+    let nes = demoSlice.slice(0 ,4); //Hell
+
+    //alert(res);
+    let realAge = prompt("Mời bạn nhập số tuổi");
+    console.log(realAge);
+
+    //Bài toán:
+    //Cho người dùng nhập vào số thứ nhất
+    //Cho ng dùng nhập vào số thứ hai
+    //tính tổng 2 số và hiển thị ra kết quả ra màn hình console
+
+    // Input:
+    // number1 (Số thứ 1)
+    // number2 (Số thứ 2)
+    // result (Biến dùng để lưu trữ kết quả)
+
+    // Process:
+    // B1: Cho người dùng nhập vào số đầu tiên
+    let numberA = prompt("Mời bạn nhập số đầu tiên"); //"+":chuyển chữ thành số
+    let numberB = prompt("Mời bạn nhập số thứ 2");
+
+    // B2: Lưu trữ giá trị người dùng nhập vào
+    // vào biến number1
+    // B3: Cho người dùng nhập vào số thứ hai
+    // B4: Lưu trữ giá trị người dùng nhập vào
+    // vào biến number2
+    // B5: Tính tổng number1 + number2 và lưu tổng
+    let sum = + numberA + + numberB;
+    // đó vào biến result;
+    // B6:
+
+    // Output
+    // Giá trị nằm trong biến result
+    console.log(sum);
+    thẻ script: xuất hiện cuối phần body
+
+    ./ :trong cùng 1 thư mục (folder)
+    ../ : di chuyển ra ngoài 1 thư mục (folder khác)
+
+    var:
+    - gán lại gtri mới
+    - khai báo lại gtri
+
+    let:
+    - gán gtri mới
+    - ko thể khai báo lại gtri
+
+    const:
+    - ko thể gán, hay báo gtri mới -> ko thể thay đổi
+    -> khai báo hằng số
+
+    ko có gtri khởi tạo -> mặc định lưu trong biến: UNDEFINED
+
+    dùng concat để nối chuỗi (ngắn, nên chỉ 2)
+
+    trim: loại bỏ khoảng trắng đầu/cuối
+    slice (index, number): cắt chuỗi
+
+    console.log(): in ra trong thẻ tab console;
+    alert: in ra trên hộp thoại thông báo;
+    document.write: in ra trên cửa sổ trình duyệt;
+
+</body>
+
+</html>
