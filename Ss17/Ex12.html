@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //viet ctr nhap vao 1 so va chuyen doi so sang so nhi phan
+    //Input: 12345 - Output: 111001010
+    let num = Number(prompt("Input a number: "));
+    //  (chuyển đổi hệ số toString(radix)- radix: he co so _ phuong thuc trong Number)
+    //eg: radix=2 => hệ nhị phân
+    //    radix=16=> he thap luc phan-hexa..
+    let binary = num.toString(2);
+    //toString thg dc sdung de chuyen doi 1 so(Number) sang he so
+    //                                                thanh 1 chuoi
+    document.write(`Binary number is: ${binary}`);
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Với phương trình bậc 2 có biểu thức như sau: ax^2 + bx + c = 0
+    // Nhập vào 3 giá trị a, b, c
+    let a=+prompt("Input a number a");
+    let b=+prompt("Input a number b");
+    let c=+prompt("Input a number c");
+    // Biết được chương trình sẽ có 2 nghiệm:
+    let delta=b*b-4*a*c;
+    let x1=(-b+Math.sqrt(delta))/(2*a);
+    let x2=(-b-Math.sqrt(delta))/(2*a);
+    let x3=(-b)/(2*a);
+    // thực hiện tính toán 2 nghiệm của phương trình và hiển thị ra màn hình:
+    // Tính Delta
+    if(delta===0){
+        document.write(`Ptrinh co no kep la: x=${x3}`);
+    }else if(delta>0){
+        document.write(`Ptrinh co 2 no pbt: <br> X1: ${x1} <br>X2: ${x2}`);
+    }else{
+        document.write(`Ptrinh vo no`);
+    }
+</script>
+</body>
+</html>

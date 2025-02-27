@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Input: 1000000
+    // Output: “1.000.000 VNĐ”
+    let n=+prompt("Input a number: ");
+    if(!isNaN(n)){
+        document.write(`${n.toLocaleString()} VNĐ`);
+    }else{
+        document.write(`Invalid`);
+    }
+</script>
+</body>
+</html>
