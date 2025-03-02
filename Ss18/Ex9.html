@@ -1,10 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
 
+<body>
+    <script>
+        let hour = +prompt("Input hour: ");
+        let minute = +prompt("Input minute: ");
+        let second = +prompt("Input second: ");
+
+        if (isNaN(hour) || isNaN(minute) || isNaN(second) || hour < 0 || hour > 23 || minute < 0 || minute > 59 || second < 0 || second > 59) {
+            alert(`Invalid`);
+        } else {
+            //C1
+            if (hour === 0) {
+                document.write(`${hour}:${minute}:${second} --> 12:${minute}:${second} AM`);
+            } else if (hour === 12) {
+                document.write(`${hour}:${minute}:${second} --> 12:${minute}:${second} PM`);
+            } else if (hour >= 1 && hour <= 11) {
+                document.write(`${hour}:${minute}:${second} --> ${hour}:${minute}:${second} AM`);
+            } else {
+                let newHour = hour - 12;
+                if (newHour >= 1 && newHour <= 9) {
+                    document.write(`${hour}:${minute}:${second} --> 0${newHour}:${minute}:${second} PM`);
+                } else {
+                    document.write(`${hour}:${minute}:${second} --> ${newHour}:${minute}:${second} PM`);
+                }
+            }
+            //C2
+            // let format=hour>=12 ? "AM" : "PM";
+            // hour = (hour % 12 === 0) ? 12 : hour % 12;
+
+            //C2.1
+            // minute = minute < 10 ? "0" + minute : minute;
+            // second = second < 10 ? "0" + second : second;
+
+            //C2.2
+            // if (minute < 10) {
+            //minute = "0" + minute;
+            //}
+            //if (second < 10) {
+            //  second = "0" + second;
+            // }
+
+            //C2.3 
+            // minute = ("0" + minute).substr(-2);
+            // second = ("0" + second).substr(-2);
+            //tuong tu nhu slice - pthuc de lay so ky tu cuoi cung cua chuoi(eg: 120 --> 20)
+            //eg: o day la 2
+
+            //C2.4
+            //or: dung padSrart
+            //eg: cu phap - let text = "5"; ---- text.padStart(2, "x"); ====>>> x5
+            //con padEnd la de them 1 chuoi vao cuoi 
+            //pphap nay co the chen 1 chuoi nhieu lan cho den khi dat do dai mong muon-thg dung lam cho chuoi co do dai nhat dinh
+            //eg: cu phap - let text = "5"; ---- text.padEnd(4, "x"); ====>>> 5xxx
+
+            // let time=hour+":"+minute+":"+second+" "+format;
+            // document.write(time);
+        }
+    </script>
 </body>
+
 </html>

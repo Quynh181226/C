@@ -5,6 +5,22 @@
     <title>Title</title>
 </head>
 <body>
-
+<script>
+    //Nhập số năm kinh nghiệm của nhân viên, xếp loại theo tiêu chí:
+    //< 1 năm: Mới vào nghề
+    //1 - 3 năm: Nhân viên có kinh nghiệm
+    //4 - 6 năm: Chuyên viên
+    //> 6 năm: Quản lý
+    let exYear=+prompt("Input Year :");
+    if(exYear<1){
+        alert("Mới vào nghề");
+    }else if(exYear>=1&&exYear<=3){
+        alert("Nhân viên có kinh nghiệm");
+    }else if(exYear>=4&&exYear<=6){
+        alert("Chuyên viên");
+    }else if(exYear>6){
+        alert("Quản lý");
+    }
+</script>
 </body>
 </html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <script>
+        // B1:
+        let salary = +prompt("Mời bạn nhập vào mức thu nhập (lương)");
+        if (salary < 5000000) {
+            document.write("Thuế bạn cần đóng là 0 VNĐ");
+        } else if (salary < 10000000) {
+            let taxRate = salary * 0.05;
+            taxRate = taxRate.toLocaleString("vi-VN");
+            document.write(`Thuế bạn cần đóng là ${taxRate} VNĐ`);
+        } else if (salary < 18000000) {
+            let taxRate = salary * 0.1;
+            taxRate = taxRate.toLocaleString("vi-VN");
+            document.write(`Thuế bạn cần đóng là ${taxRate} VNĐ`);
+        } else if (salary < 32000000) {
+            let taxRate = salary * 0.15;
+            document.write(`Thuế bạn cần đóng là ${taxRate} VNĐ`);
+        } else {
+            let taxRate = salary * 0.2;
+            document.write(`Thuế bạn cần đóng là ${taxRate} VNĐ`);
+        }
+        // INPUT
+        //     -> Cho người dùng nhập vào lương (salary)
+        // PROCESS
+        // B1: Tạo 1 biến salary và lưu trữ giá trị người dùng nhập vào từ bàn phím về mức lương
+        // B2: Kiểm tra xem :
+        //salary < 5 triệu
+        // Nếu đúng —> Hiển thị ra thuế là 0 VNĐ
+        // Nếu sai —> Tiếp tục
+        // Salary >= 5 triệu và đồng thời salary < 10 triệu
+        // Nếu đúng —> Hiển ra thuế là salary *5 /100
+        // Nếu sai —> Tiếp tục
+        // Salary >= 10 triệu và đồng thời salary < 18triệu
+        // Nếu đúng —> Hiển thị ra thuế là salary *10/100
+        // Nếu sai —> Tiếp tục
+        // Salary >= 18 và đồng thời salary < 32 triệu
+        // Nếu đúng —> Hiển ra thuế là salary * 15 / 100
+        // Nếu sai —>
+        // Salary >= 32
+        // Nếu đúng —> Hiển thị ra thuế là salary *20 / 100
+        // Nếu sai —> Mức lương nhập vào không hợp lệ
+        // OUTPUT: -> Số tiền thuế cần phải đóng
+        //B2:
+        let Http = +prompt("Input HTTP:");
+        document.write(`<br>`);
+        switch (Http) {
+            case 200:
+                document.write(`Thành công`);
+                break;
+            case 201:
+                document.write(`Thêm thành công`);
+                break;
+            case 400:
+                document.write(`Lỗi request`);
+                break;
+            case 404:
+                document.write(`Không tìm thấy`);
+                break;
+            case 500:
+                document.write(`Lỗi server`);
+                break;
+            default:
+                document.write(`Invalid`);
+                break;
+        }
+        //B3:
+        let condition = prompt("Nhap vao trang thai nhan vien:");
+        // let WORKING="WORKING";
+        // let ON_LEAVE="ON_LEAVE";
+        // let RESIGNED="RESIGNED";
+        // let TERMINATED="TERMINATED";
+        document.write(`<br>`);
+        document.write(condition === "WORKING" ? "Đang làm việc" :
+            "ON_LEAVE" ? "Đang nghỉ phép" : "RESIGNED" ? "Đã nghỉ việc" :
+                "TERMINATED" ? "Bị sa thải" : "Invalid");
+    </script>
+</body>
+
+</html>

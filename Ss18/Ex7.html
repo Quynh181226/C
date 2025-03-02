@@ -1,10 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
 
+<body>
+    <script>
+        //Input: Nhap
+        //Ouput: In kqua
+        let a = Number(prompt("Input a number a: "));
+        let b = Number(prompt("Input a number b: "));
+        if (isNaN(a) && isNaN(b)) {
+            alert("Invalid");
+        } else {
+            let c = prompt("Input calculate(+, -, *, /, %): ");
+            let result = 0;
+            switch (c) {
+                case '+':
+                    result = a + b;
+                    alert(`Result: ${a} + ${b} = ${result}`);
+                    break;
+                case '-':
+                    result = a - b;
+                    alert(`Result: ${a} - ${b} = ${result}`);
+                    break;
+                case '*':
+                    result = a * b;
+                    alert(`Result: ${a} * ${b} = ${result}`);
+                    break;
+                case '/':
+                    if (b === 0) {
+                        alert("a Cannot divide by 0");
+                    } else {
+                        result = a / b;
+                        alert(`Result: ${a} / ${b} = ${result}`);
+                    }
+                    break;
+                case '%':
+                    if (b === 0) {
+                        alert("b Cannot divide by 0");
+                    } else {
+                        result = a % b;
+                        alert(`Result: ${a} % ${b} = ${result}`);
+                    }
+                    break;
+                default: {
+                    alert(`Phép tính không hợp lệ!`);
+                    break;
+                }
+            }
+        }
+    </script>
 </body>
+
 </html>
