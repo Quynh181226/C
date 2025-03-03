@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Iput:(a, b, c) --> 1, -2, 2
+    //Output: ptrinh vo no
+    let a=+prompt("Input a number a");
+    let b=+prompt("Input a number b");
+    let c=+prompt("Input a number c");
+    let delta=b*b-4*a*c;
+    let x1=(-b+Math.sqrt(delta))/(2*a);
+    let x2=(-b-Math.sqrt(delta))/(2*a);
+    let x3=(-b)/(2*a);
+    if(delta===0){
+        document.write(`Ptrinh co no kep la: x=${x3}`);
+    }else if(delta>0){
+        document.write(`Ptrinh co 2 no pbt: <br> X1: ${x1} <br>X2: ${x2}`);
+    }else{
+        document.write(`Ptrinh vo no`);
+    }
+</script>
+</body>
+</html>
