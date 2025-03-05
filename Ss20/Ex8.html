@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   //Viết chương trình Javascript nhập vào n là số nguyên tố sẽ hiển thị,
+   //Biết số nguyên tố chỉ chia hết cho chính nó và 1,
+   //Thực hiện in ra màn hình n số nguyên tố
+   //In-Out: 5 -> 2 3 5 7 11
+   let n = +prompt("Input numbers:");
+   if (isNaN(n)||n <= 0){
+       alert("Invalid");
+   } else{
+       let count = 0;
+       let num = 2;
+       let result = "";
+       while(count <n){
+           let loop= true;
+           for (let i = 2; i <= Math.sqrt(num); i++){
+               if (num % i === 0){
+                   loop = false;
+                   break;
+               }
+           }
+           if (loop){
+               result += num + " ";
+               count++;
+           }
+           num++;
+       }
+       alert(`${n} prime is: ${result}`);
+   }
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Viết một chương trình Javascript thực  hiện nhập vào một chuỗi bất kỳ, và ký tự cần tìm kiếm
+    //Thực hiện dùng vòng lặp duyệt qua chuỗi và kiểm tra chuỗi đó có tồn tại ký tự cần tìm kiếm
+    //trong đó hay không, nếu có thông báo tương ứng
+    //C1
+    let num=prompt("Input: ");
+    let search=`w`;
+    let loop=false;
+    for(let i=0;i<num.length;i++){
+        if (num[i] === search) {
+        loop=true;
+        break;
+        }
+    }
+    if(loop){
+        alert(`tim thay`)
+    }else {
+        alert(`not tim thay`)
+    }
+    //C2
+    // let str=prompt(`Input a string random`);
+    // if(str.includes("w")){
+    //     alert(`Ton tai  tu can tim kiem`);
+    // }else{
+    //     alert(`Ko ton tai  tu can tim kiem`);
+    // }
+</script>
+</body>
+</html>

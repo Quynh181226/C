@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Viết chương trình Javascript nhập vào a, b với a lũy thừa bậc b ( A^B )
+    //Thực hiện tính toán bằng vòng lặp for không sử dụng hàm có sẵn và in kết quả ra màn hình
+    //Input-Output:nguyen va nguyen duong
+    //       2 3 -> 8
+    //       d 2 ->Invalid
+    let a=parseInt(prompt(`Input a: `));
+    let b=parseInt(prompt(`Input b: `));
+    let result=1;
+   if(b<1 || a<1){
+       alert(`Invalid`);
+   }else if(isNaN(a)||isNaN(b)){
+       alert(`Invalid`);
+   }else{
+       for(let i=0;i<b;i++){
+           result*=a;
+       }
+       alert(result);
+   }
+
+</script>
+</body>
+</html>

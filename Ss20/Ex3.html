@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Viết chương trình nhập vào một chuỗi số nguyên và kiểm tra xem số đó có đối xứng hay không.
+    //(Số đối xứng là số mà khi đảo ngược vẫn giống số ban đầu, ví dụ: 121, 343, 787).
+    //Input: 121
+    //Output: la so doi xung
+    //B1: Input
+    let n = prompt("Input string opposite:");
+    //B2: Tao 1 bien chuoi
+    let reverse = "";
+    //B3: Duyet tu chuoi cuoi -> dau cua chuoi so ban dau
+    for (let i = n.length - 1; i >= 0; i--) {
+        reverse += n.charAt(i);
+    }
+    //B4: So sanh chuoi ban dau va chuoi dao nguoc
+    if (n === reverse) {
+        alert("Chuoi dxung");
+    } else {
+        alert("Chuoi not dxung");
+    }
+</script>
+</body>
+</html>

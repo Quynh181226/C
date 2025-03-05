@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Viết chương trình nhập vào 1 số nguyên, thực hiện kiểm tra số đó
+    //có phải là số nguyên tố hay không.
+    //Sử dụng vòng lặp for để kiểm tra
+    let num = +prompt(`Input a number: `);
+    let check = true;
+
+    if (isNaN(num) || num < 0) {
+        alert(`Invalid`);
+    } else if (num < 2) {
+        alert(`Not so nguyen to`);
+    } else {
+        for (let i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i === 0) {
+                check = false;
+                break;
+            }
+        }
+        if (check) {
+            alert(`So nto`);
+        } else {
+            alert(`Not so nto`);
+        }
+    }
+
+</script>
+</body>
+</html>
