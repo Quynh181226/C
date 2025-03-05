@@ -5,6 +5,21 @@
     <title>Title</title>
 </head>
 <body>
-
+<script>
+    //Viết chương trình yêu cầu người dùng nhập vào một số nguyên bất kỳ,
+    //in ra tất cả các ước của số đã nhập.
+    let num;
+    let count=0;
+       while (isNaN(num)||num%1!==0||num<=0) {
+           num=parseInt(prompt("Input a random integer number: "));
+       }
+        for(let i=1;i<num;i++){
+            if(num%i===0){
+                count+=i+" ";
+            }
+        }
+        alert(count);
+        //sai
+</script>
 </body>
 </html>

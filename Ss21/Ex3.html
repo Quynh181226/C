@@ -11,15 +11,15 @@
     //và kiểm tra xem có nhập đúng không và in kết quả ra màn hình.
 
     let password="PASSWORD OF YOUUUU";
-    loop=true;
-    while (password===true){
+    let loop=true;
+    while (loop===true){
         let pass_cur=prompt(`Input Password : `);
-        alert(`True`);
-    }
-    if(pass_cur===password){
-
-    }else{
-
+        if(pass_cur===password){
+            alert(`True`);
+            loop=false;
+        }else{
+            alert(`False`);
+        }
     }
 
 

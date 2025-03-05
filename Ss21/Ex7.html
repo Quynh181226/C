@@ -5,6 +5,23 @@
     <title>Title</title>
 </head>
 <body>
+<script>
+    //Viết chương trình yêu cầu người dùng nhập vào số tiền gửi ngân hàng ban đầu,
+    //lãi suất tháng và số tháng gửi. Tính số tiền lãi và tiền nhận được sau
+    //thời gian gửi biết tính lãi theo lãi nhập gốc.
+    //Input: Tiền ban đầu: 1000 - Lãi suất: 1% - số tháng gửi: 3
+    //Output: Tiền lãi: 30.301 - Tiền nhận được: 1030.301
+    let principal=+prompt(`Input money: `);
+    let interes_rate=+prompt(`Input interes rate: `);
+    let month=+prompt(`Input month: `);
+    let temp =principal;
+    interes_rate=interes_rate/100;
+    let interes_money;
+    for(let i=0;i<interes_rate;i++) {
+        interes_money = interes_rate * principal;
+        principal = interes_rate;
+    }
 
+</script>
 </body>
 </html>
