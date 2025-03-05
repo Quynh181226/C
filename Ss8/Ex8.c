@@ -1,0 +1,18 @@
+/*Bai 8 : Khai báo và gán giá trị cho một ma trận vuông dưới dạng mảng hai chiều bất kỳ,
+in các phần tử trên đường chéo phụ của ma trận và tổng của các phần tử đó ra màn hình*/
+#include <stdio.h>
+int main()
+{
+    int a[3][3] = {{1, 8, 1},
+                   {2, 2, 0},
+                   {0, 6, 2}};
+    int sum = 0;
+    printf("The elements sub-diagonal are :");
+    for (int i = 0; i < 3; i++)
+    {
+        printf("%d", a[i][3 - 1 - i]);
+        sum += a[i][3 - i - 1];
+    }
+    printf("Total elements the sub-diagonal of matrix :%d", sum);
+    return 0;
+}
